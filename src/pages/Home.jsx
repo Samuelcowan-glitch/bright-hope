@@ -1,0 +1,587 @@
+import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import {
+  BookOpen,
+  GraduationCap,
+  School,
+  Shirt,
+  Stethoscope,
+  Utensils,
+} from 'lucide-react'
+
+import Layout from '../components/Layout.jsx'
+import SEO from '../components/SEO.jsx'
+import asset from '../lib/asset.js'
+import { Section, Container, Eyebrow, H2, Lead, Button, Stat, Card } from '../components/ui.jsx'
+
+gsap.registerPlugin(ScrollTrigger)
+
+/* The one legal sentence. It appears verbatim wherever the relationship is
+   stated, and nothing stronger is written anywhere on this page: the
+   registration belongs to Rainbow House Kenya, not to Bright Hope. */
+const PARTNERSHIP =
+  'Bright Hope Education Project works in partnership with Rainbow House Kenya, ' +
+  'a charity registered in England and Wales, number 1111579.'
+
+/* The verified basket. Both stages are funded the same way; only the monthly
+   figure differs, so the two cards list the same six things. */
+const COVERED = [
+  { Icon: School, label: 'School fees' },
+  { Icon: Shirt, label: 'Uniform and shoes' },
+  { Icon: BookOpen, label: 'Books and materials' },
+  { Icon: Utensils, label: 'A daily meal' },
+  { Icon: Stethoscope, label: 'Basic healthcare' },
+  { Icon: GraduationCap, label: 'Exam entry' },
+]
+
+const STEPS = [
+  {
+    title: 'You send us a message',
+    body: 'Tell us whether you are thinking of primary, secondary, or vocational and higher education. The form takes a minute.',
+  },
+  {
+    title: 'We talk',
+    body: 'By email or telephone, whichever you prefer. We will tell you about a child who is waiting, what their school costs, and what the next school year looks like for them.',
+  },
+  {
+    title: 'We send you the standing order details',
+    body: 'You set it up from your own bank — £15 a month, £35 a month, or an agreed amount for a vocational or higher education student. You stay in control of it.',
+  },
+  {
+    title: 'Letters and cards come back',
+    body: 'Written by the child and passed on by us, during the school year.',
+  },
+]
+
+const TESTIMONIALS = [
+  {
+    name: 'Sue',
+    quote:
+      'I like knowing my money goes directly to educate my sponsored child. They are a small charity that you can trust to know your money is used well',
+  },
+  {
+    name: 'Jeanie',
+    quote: 'Thank you for the letter from Agnes, it is wonderful to hear from her',
+  },
+  {
+    name: 'Karen',
+    quote:
+      "Thank you so much for telling me about Joseph & his family, I don't know how to say thank you enough for all that you do",
+  },
+  {
+    name: 'Lynda',
+    quote: "I received John's Card and letter, it was beautiful, Thank you",
+  },
+]
+
+const FAQS = [
+  {
+    question: 'Is there a card payment option?',
+    answer:
+      'Not at the moment. Every sponsorship here starts with the enquiry form and continues as a standing order from your own bank. There is no payment processor in between, which is why all funding for the children goes directly for the children.',
+  },
+  {
+    question: 'Can I choose a child?',
+    answer:
+      'You can tell us the stage you want to support — primary, secondary, or vocational and higher education. We will then tell you who is waiting and why, before anything is set up.',
+  },
+  {
+    question: 'Do I have to be Christian to sponsor a child?',
+    answer:
+      'No. This is Christian work and we are open about it, but sponsors of any faith or none are welcome, and children are supported on the basis of need.',
+  },
+  {
+    question: 'What if I have to stop?',
+    answer:
+      'Tell us, and we will look for another sponsor for that child. No one is asked to explain themselves. We would rather you told us early than quietly stopped.',
+  },
+  {
+    question: 'Where does my money actually go?',
+    answer:
+      'School fees, uniform and shoes, books and materials, a daily meal, basic healthcare and exam entry. All funding for the children goes directly for the children.',
+  },
+]
+
+export default function Home() {
+  const statsRef = useRef(null)
+
+  /* The three figures fade up one at a time as they come into view. They are
+     present in the markup and GSAP only animates from a hidden state, so if
+     the script never runs — or the visitor has asked for reduced motion —
+     they are simply there. */
+  useEffect(() => {
+    const root = statsRef.current
+    if (!root) return undefined
+
+    const reduceMotion =
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduceMotion) return undefined
+
+    const ctx = gsap.context(() => {
+      gsap.from('[data-stat]', {
+        opacity: 0,
+        y: 16,
+        duration: 0.6,
+        ease: 'power2.out',
+        stagger: { each: 0.12 },
+        scrollTrigger: { trigger: root, start: 'top 85%', once: true },
+      })
+    }, root)
+
+    return () => ctx.revert()
+  }, [])
+
+  return (
+    <Layout>
+      <SEO
+        title="Bright Hope Education Project | Sponsoring children's education in Gede and Watamu, Kenya"
+        description="Funding school places for 29 children in Gede and Watamu, Kilifi County, Kenya. £15 a month for primary, £35 a month for secondary. All funding for the children goes directly for the children."
+      />
+
+      {/* ── Hero ──────────────────────────────────────────────────────── */}
+      <Section className="bg-sand-light pt-10 sm:pt-14 lg:pt-20">
+        <Container>
+          <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
+            <div className="lg:col-span-6">
+              <Eyebrow>Gede and Watamu · Kilifi County · Kenya</Eyebrow>
+
+              <h1 className="max-w-prose font-display text-display font-semibold leading-[1.08] tracking-tight text-primary sm:text-display-lg lg:text-display-xl">
+                Twenty-nine children in school
+              </h1>
+
+              <Lead>
+                Bright Hope Education Project funds school places for children in Gede and Watamu, on
+                the Kenyan coast. {PARTNERSHIP}
+              </Lead>
+
+              <p className="mt-6 max-w-prose rounded-2xl border border-divider bg-surface px-5 py-4 font-body text-base font-semibold leading-relaxed text-ink sm:text-lg">
+                £15 a month sponsors a primary school child. £35 a month sponsors a secondary school
+                child.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Button to="/sponsor">Sponsor a child</Button>
+                <Button to="/gede" variant="ghost">
+                  See the work in Gede
+                </Button>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6">
+              <figure className="m-0">
+                <img
+                  src={asset('/img/sponsors-01.jpg')}
+                  alt="Four young children standing outside a timber-walled home in Kilifi County, three of them in the maroon gingham school uniform, one holding a new ruled exercise book."
+                  width="1556"
+                  height="1600"
+                  className="aspect-[4/5] w-full rounded-4xl object-cover shadow-card sm:aspect-[5/4] lg:aspect-[4/5]"
+                />
+                <figcaption className="mt-3 font-body text-sm text-muted">
+                  Photograph supplied by Rainbow House Kenya.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── The three numbers ─────────────────────────────────────────── */}
+      <Section className="bg-paper">
+        <Container>
+          <H2>Small charity, short distance</H2>
+
+          <div ref={statsRef} className="mt-10 grid gap-10 sm:grid-cols-3 sm:gap-8">
+            <div data-stat>
+              <Stat figure="29" label="Children sponsored today, as at October 2026" />
+            </div>
+            <div data-stat>
+              <Stat
+                figure="100%"
+                label="All funding for the children goes directly for the children"
+              />
+            </div>
+            <div data-stat>
+              <Stat figure="£15 – £35" label="A month, depending on the stage of school" />
+            </div>
+          </div>
+
+          <p className="mt-10 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
+            There is no card payment on this website and no payment processor, so nothing is taken
+            out of a gift on the way to a school in Kilifi County. Sponsorship starts with a message
+            and continues as a standing order from your own bank.
+          </p>
+        </Container>
+      </Section>
+
+      {/* ── Why education ─────────────────────────────────────────────── */}
+      <Section className="bg-sand">
+        <Container>
+          <div className="max-w-prose">
+            <H2>Why we put the money into school fees</H2>
+
+            <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
+              Across Gede and Watamu there are children out of the classroom who have every bit of
+              the ability to be in it. What stands in the way is the cost of a school place: fees,
+              uniform, shoes, textbooks, exam entry, and the bus to the secondary school in Watamu.
+            </p>
+
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              A term&rsquo;s costs can exceed a month&rsquo;s income. These are families who cannot
+              meet school costs, year after year.
+            </p>
+
+            <p className="mt-8">
+              <Link
+                to="/mission"
+                className="rounded font-body text-lg font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-sand"
+              >
+                Read our objectives and mission
+              </Link>
+            </p>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── What sponsorship covers ───────────────────────────────────── */}
+      <Section className="bg-sand-light">
+        <Container>
+          <H2>What your sponsorship covers</H2>
+          <Lead>
+            Both stages are funded the same way. Only the monthly figure changes, because secondary
+            school costs more.
+          </Lead>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <Card className="flex h-full flex-col">
+              <h3 className="font-display text-2xl font-semibold text-primary">Primary school</h3>
+              <p className="mt-2 font-body text-lg font-semibold text-ink">
+                £15 a month · £180 a year
+              </p>
+              <ul className="mt-6 flex list-none flex-col gap-3 p-0">
+                {COVERED.map(({ Icon, label }) => (
+                  <li key={label} className="flex items-start gap-3 font-body text-base text-ink-soft">
+                    <Icon aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-growth" />
+                    {label}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 pt-2 sm:mt-auto">
+                <Button to="/sponsor?place=primary" className="w-full">
+                  Sponsor a primary school child
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="flex h-full flex-col">
+              <h3 className="font-display text-2xl font-semibold text-primary">Secondary school</h3>
+              <p className="mt-2 font-body text-lg font-semibold text-ink">
+                £35 a month · £420 a year
+              </p>
+              <ul className="mt-6 flex list-none flex-col gap-3 p-0">
+                {COVERED.map(({ Icon, label }) => (
+                  <li key={label} className="flex items-start gap-3 font-body text-base text-ink-soft">
+                    <Icon aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-growth" />
+                    {label}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 font-body text-base leading-relaxed text-muted">
+                Secondary school is where the Kenyan national exams decide what a young person can
+                do next.
+              </p>
+              <div className="mt-8 pt-2 sm:mt-auto">
+                <Button to="/sponsor?place=secondary" className="w-full">
+                  Sponsor a secondary school child
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="flex h-full flex-col">
+              <h3 className="font-display text-2xl font-semibold text-primary">
+                Vocational and higher education
+              </h3>
+              <p className="mt-2 font-body text-lg font-semibold text-ink">Talk to us</p>
+              <p className="mt-6 font-body text-base leading-relaxed text-ink-soft">
+                Some of our students finish secondary school and want to carry on — into college,
+                training or university. Costs vary with the course, so there is no fixed monthly
+                figure. Tell us you are interested and we will explain what a particular student
+                needs.
+              </p>
+              <div className="mt-8 pt-2 sm:mt-auto">
+                <Button to="/contact" variant="ghost" className="w-full">
+                  Ask about vocational and higher education
+                </Button>
+              </div>
+            </Card>
+          </div>
+
+          <p className="mt-10 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
+            We ask people to think in school years rather than months. A child who knows next
+            year&rsquo;s fees are covered behaves differently from a child who does not, and so does
+            the school.
+          </p>
+        </Container>
+      </Section>
+
+      {/* ── How it actually works ─────────────────────────────────────── */}
+      <Section className="bg-paper">
+        <Container>
+          <H2>How sponsorship starts</H2>
+          <Lead>
+            There is no card payment button on this website. Sponsorship here begins with a
+            conversation, because a sponsor is taking on a child&rsquo;s schooling for years.
+          </Lead>
+
+          <ol className="mt-12 grid list-none gap-6 p-0 sm:grid-cols-2">
+            {STEPS.map((step, index) => (
+              <li key={step.title} className="rounded-2xl border border-divider bg-surface p-6 sm:p-8">
+                <p
+                  aria-hidden="true"
+                  className="font-display text-3xl font-semibold leading-none text-accent-ink"
+                >
+                  {index + 1}
+                </p>
+                <h3 className="mt-4 font-display text-xl font-semibold text-primary">
+                  {step.title}
+                </h3>
+                <p className="mt-3 font-body text-base leading-relaxed text-ink-soft">{step.body}</p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10">
+            <Button to="/contact">Ask about sponsoring a child</Button>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── What you receive ──────────────────────────────────────────── */}
+      <Section className="bg-sand">
+        <Container>
+          <div className="max-w-prose">
+            <H2>What comes back to you</H2>
+            <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
+              Letters and cards, in the child&rsquo;s own handwriting, passed on by us. If a
+              child&rsquo;s circumstances change, you hear it from us rather than reading it later.
+            </p>
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              We write to sponsors because the relationship goes both ways.
+            </p>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── Testimonials ──────────────────────────────────────────────── */}
+      <Section className="bg-paper">
+        <Container>
+          <H2>Hear from our existing sponsors</H2>
+          <Lead>Four of our sponsors, in their own words.</Lead>
+
+          <ul className="mt-12 grid list-none gap-6 p-0 sm:grid-cols-2">
+            {TESTIMONIALS.map((item) => (
+              <li key={item.name}>
+                <Card className="h-full">
+                  <blockquote className="m-0">
+                    <p className="font-display text-xl leading-snug text-ink">
+                      &ldquo;{item.quote}&rdquo;
+                    </p>
+                    <footer className="mt-5 font-body text-base font-semibold text-muted">
+                      — {item.name}
+                    </footer>
+                  </blockquote>
+                </Card>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 font-body text-base text-muted">
+            Quoted as our sponsors wrote them.
+          </p>
+
+          <p className="mt-6">
+            <Link
+              to="/mission#testimonials"
+              className="rounded font-body text-lg font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+            >
+              Read our testimonials
+            </Link>
+          </p>
+        </Container>
+      </Section>
+
+      {/* ── Why we do this ────────────────────────────────────────────── */}
+      <Section className="bg-sand-light">
+        <Container>
+          <div className="max-w-prose">
+            <H2>Why we do this</H2>
+
+            <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
+              This is Christian work, and we would rather say so plainly than leave you to guess.
+              The registered purposes under which it sits are to relieve need and advance the
+              education of children in Kenya, and to advance the teaching of the Christian faith.
+            </p>
+
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              In practice we work through people who are already there. Our partner Rainbow House
+              Kenya knows the families in Gede, and knows when a child has stopped turning up at
+              school.
+            </p>
+
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              Support is offered on the basis of need, whatever a family&rsquo;s faith. Sponsors
+              come to us with every kind of belief and none, and are equally welcome.
+            </p>
+
+            <p className="mt-8">
+              <Link
+                to="/about"
+                className="rounded font-body text-lg font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-sand-light"
+              >
+                More about who we are
+              </Link>
+            </p>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── Gede today ────────────────────────────────────────────────── */}
+      <Section className="bg-paper">
+        <Container>
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
+            <div>
+              <H2>Gede today</H2>
+
+              <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
+                What used to be the Rainbow House children&rsquo;s home is now held in trust as
+                ABBAFATHERLAND and runs as a community hub, with a library and an education resource
+                centre. There are hydroponics, fruit cultivation and income-generating activities on
+                the land.
+              </p>
+
+              <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+                The children we support live with their families or with foster parents. What they
+                need from us is the school fees.
+              </p>
+
+              <div className="mt-8">
+                <Button to="/gede" variant="ghost">
+                  See the work in Gede
+                </Button>
+              </div>
+            </div>
+
+            <figure className="m-0">
+              <img
+                src={asset('/img/gede-01.jpg')}
+                alt="Children in bright blue T-shirts gathered under the corrugated-iron roof and timber trusses of the community hub at Gede, one of them holding a mason's trowel."
+                width="1200"
+                height="1600"
+                loading="lazy"
+                className="aspect-[4/5] w-full rounded-4xl object-cover shadow-card"
+              />
+              <figcaption className="mt-3 font-body text-sm text-muted">
+                Photograph supplied by Rainbow House Kenya.
+              </figcaption>
+            </figure>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── The blog post ─────────────────────────────────────────────── */}
+      <Section className="bg-sand">
+        <Container>
+          <H2>Latest from Gede</H2>
+
+          <div className="mt-10 max-w-3xl">
+            <Card>
+              <p className="font-body text-sm font-semibold uppercase tracking-wider text-accent-ink">
+                From the Team · 14 October 2026 · 6 min read
+              </p>
+              <h3 className="mt-4 font-display text-2xl font-semibold leading-snug text-primary sm:text-3xl">
+                What a children&rsquo;s home became
+              </h3>
+              <p className="mt-4 font-body text-lg leading-relaxed text-ink-soft">
+                In Gede, the building that was Rainbow House is now a library, a resource centre and
+                a smallholding. The children live with families. Here is why that is progress and
+                not retreat.
+              </p>
+              <div className="mt-8">
+                <Button
+                  to="/blog/gede-abbafatherland-what-a-childrens-home-became"
+                  variant="ghost"
+                >
+                  Read the post
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── Questions people ask ──────────────────────────────────────── */}
+      <Section className="bg-paper">
+        <Container>
+          <H2>Before you get in touch</H2>
+
+          <div className="mt-10 max-w-prose">
+            {FAQS.map((faq) => (
+              <details
+                key={faq.question}
+                className="group border-b border-divider py-2 [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded py-4 font-display text-xl font-semibold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper">
+                  {faq.question}
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 font-body text-2xl leading-none text-accent-ink transition-transform group-open:rotate-45"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="pb-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <Button to="/contact" variant="ghost">
+              Ask us something else
+            </Button>
+          </div>
+        </Container>
+      </Section>
+
+      {/* ── Closing ask ───────────────────────────────────────────────── */}
+      <Section className="bg-sand-light">
+        <Container>
+          <div className="max-w-prose">
+            <H2>Join our mission today</H2>
+
+            <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
+              Your donations help us continue our mission to reach those who need it most. Every
+              contribution, no matter the size, makes a real difference.
+            </p>
+
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              We welcome all conversations, support and donations.
+            </p>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button to="/sponsor">Sponsor a child</Button>
+              <Button to="/contact" variant="ghost">
+                Ask a question
+              </Button>
+            </div>
+
+            <p className="mt-10 font-body text-base leading-relaxed text-muted">{PARTNERSHIP}</p>
+          </div>
+        </Container>
+      </Section>
+    </Layout>
+  )
+}
