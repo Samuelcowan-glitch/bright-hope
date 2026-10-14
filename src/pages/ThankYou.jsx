@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { BookOpen, MapPinned } from 'lucide-react'
 import Layout from '../components/Layout.jsx'
 import SEO from '../components/SEO.jsx'
@@ -71,13 +72,13 @@ export default function ThankYou() {
               </ol>
 
               <p className="mt-10 max-w-prose rounded-2xl border border-divider bg-sand-light p-6 font-body text-base leading-relaxed text-ink">
-                If you do not hear from us within a week, please ring{' '}
-                <a
-                  href="tel:+447551909493"
+                If you do not hear from us within a week, please{' '}
+                <Link
+                  to="/contact"
                   className="rounded font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-sand-light"
                 >
-                  07551909493
-                </a>
+                  send us a message again
+                </Link>
                 . It will mean the message went astray, not that we were not interested.
               </p>
             </div>

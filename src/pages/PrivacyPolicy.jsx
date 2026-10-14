@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import Layout from '../components/Layout.jsx'
 import SEO from '../components/SEO.jsx'
 import { Section, Container, Eyebrow, Lead, Button, Card } from '../components/ui.jsx'
@@ -51,8 +51,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p className={BODY}>
                 The data controller for enquiries sent through this website is Bright Hope Education,
-                Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR, telephone
-                07551909493. If you would rather write to a person than to an organisation, ask for
+                Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR. If you would rather write to a person than to an organisation, ask for
                 the trustee responsible for data protection and your message will be passed on.
               </p>
               <p className={BODY}>
@@ -161,7 +160,7 @@ export default function PrivacyPolicy() {
                 Under UK data protection law you can ask us for a copy of what we hold about you,
                 ask us to correct it if it is wrong, ask us to delete it, ask us to restrict what we
                 do with it, object to our using it, and ask for it in a portable form. You can also
-                withdraw your consent to being contacted. Write to the address above or ring us, and
+                withdraw your consent to being contacted. Write to the address above or send us a message, and
                 we will deal with it within one month.
               </p>
               <p className={BODY}>
@@ -200,12 +199,6 @@ export default function PrivacyPolicy() {
                     Bright Hope Education, Priors Glade, Priorswood, Compton, Guildford,
                     Surrey, GU3 1DR
                   </span>
-                </li>
-                <li className="flex gap-3">
-                  <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent-ink" aria-hidden="true" />
-                  <a href="tel:+447551909493" className={LINK}>
-                    07551909493
-                  </a>
                 </li>
               </ul>
               <div className="mt-6 flex flex-wrap gap-3">

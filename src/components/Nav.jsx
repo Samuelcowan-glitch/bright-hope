@@ -31,12 +31,12 @@ export default function Nav() {
   const isCurrent = (to) => pathname === to || pathname === `${to}/`
 
   return (
-    <header className="sticky top-0 z-50 border-b border-divider bg-paper/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-divider bg-white">
       <div className="mx-auto flex w-full max-w-container items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           to="/"
           aria-label="Bright Hope Education — home"
-          className="shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+          className="shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
         >
           <img
             src={asset('/img/logo-bright-hope.png')}
@@ -55,7 +55,7 @@ export default function Nav() {
                 <Link
                   to={link.to}
                   aria-current={isCurrent(link.to) ? 'page' : undefined}
-                  className={`rounded font-body text-[0.95rem] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-paper ${
+                  className={`rounded font-body text-[0.95rem] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-white ${
                     isCurrent(link.to)
                       ? 'text-primary underline decoration-accent decoration-2 underline-offset-[7px]'
                       : 'text-ink-soft hover:text-primary'
@@ -79,7 +79,7 @@ export default function Nav() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             aria-controls="mobile-menu"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-divider text-primary transition-colors hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-divider text-primary transition-colors hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden"
           >
             {open ? <X aria-hidden="true" className="h-5 w-5" /> : <Menu aria-hidden="true" className="h-5 w-5" />}
           </button>
@@ -90,7 +90,7 @@ export default function Nav() {
       <div
         id="mobile-menu"
         hidden={!open}
-        className="border-t border-divider bg-paper lg:hidden"
+        className="border-t border-divider bg-white lg:hidden"
       >
         <nav aria-label="Main" className="px-4 py-4 sm:px-6">
           <ul className="flex flex-col">
@@ -100,7 +100,7 @@ export default function Nav() {
                   to={link.to}
                   onClick={() => setOpen(false)}
                   aria-current={isCurrent(link.to) ? 'page' : undefined}
-                  className={`block rounded py-3.5 font-body text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper ${
+                  className={`block rounded py-3.5 font-body text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                     isCurrent(link.to) ? 'text-primary' : 'text-ink-soft'
                   }`}
                 >

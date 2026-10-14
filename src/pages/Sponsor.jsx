@@ -35,7 +35,6 @@ const FORM_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_FORM_ID'
    the charity's own; CONFIRM THE MAILBOX NAME WITH THE OFFICE before launch
    and correct it here if it is anything other than info@. */
 const CONTACT_EMAIL = 'info@brighthopeeducation.com'
-const CONTACT_PHONE = '07551909493'
 
 /* The three sponsorship stages, in the form's own words so that the email
    which lands in the office inbox reads as a sentence. */
@@ -895,13 +894,6 @@ export default function Sponsor() {
                     >
                       {CONTACT_EMAIL}
                     </a>{' '}
-                    or ring{' '}
-                    <a
-                      href={`tel:${CONTACT_PHONE}`}
-                      className="font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4"
-                    >
-                      {CONTACT_PHONE}
-                    </a>{' '}
                     instead — your message has not been lost, but it has not reached us either.
                   </p>
                 ) : null}
@@ -933,16 +925,8 @@ export default function Sponsor() {
             <div className="space-y-6">
               <Card>
                 <h3 className="font-display text-2xl font-semibold text-primary">
-                  Prefer to speak to someone?
+                  Where to find us
                 </h3>
-                <p className="mt-4 font-body text-base leading-relaxed text-ink-soft">
-                  <a
-                    href={`tel:${CONTACT_PHONE}`}
-                    className="font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
-                  >
-                    {CONTACT_PHONE}
-                  </a>
-                </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-ink-soft">
                   <span className="font-semibold text-ink">Registered address</span>
                   <br />
@@ -991,8 +975,8 @@ export default function Sponsor() {
                   Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-muted">
-                  If something about your enquiry is not handled as it should be, tell us: ring
-                  {' '}{CONTACT_PHONE} or write to the registered address above, and it goes to the
+                  If something about your enquiry is not handled as it should be, tell us: email{' '}
+                  {CONTACT_EMAIL} or write to the registered address above, and it goes to the
                   trustees.
                 </p>
               </Card>

@@ -13,6 +13,7 @@ import Contact from './pages/Contact.jsx'
 import ThankYou from './pages/ThankYou.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import NotFound from './pages/NotFound.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 import './index.css'
 
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
         served at the root on the live domain and under /bright-hope/ on the
         github.io address it is checked on first. */}
     <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

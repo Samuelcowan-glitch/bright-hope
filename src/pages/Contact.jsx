@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { CircleAlert, MapPin, MessageSquare, Phone } from 'lucide-react'
+import { CircleAlert, MapPin, MessageSquare } from 'lucide-react'
 import Layout from '../components/Layout.jsx'
 import SEO from '../components/SEO.jsx'
 import { Section, Container, Eyebrow, Lead, Card } from '../components/ui.jsx'
@@ -16,7 +16,7 @@ import { Section, Container, Eyebrow, Lead, Card } from '../components/ui.jsx'
    Until it is replaced, FORM_READY is false and the form does not try to post
    at all: once the details are checked, pressing send opens the visitor's own
    email app with the whole message already filled in, and the page keeps a
-   copy of the message on screen with the phone number, so no enquiry is lost.
+   copy of the message on screen, so no enquiry is lost.
    As soon as a real form id is pasted in, the form posts to Formspree and
    lands on /thank-you, and nothing else needs changing.
    ────────────────────────────────────────────────────────────────────────── */
@@ -28,9 +28,6 @@ const FORM_READY =
    the charity's own; CONFIRM THE MAILBOX NAME WITH THE OFFICE before launch
    and correct it here if it is anything other than info@. */
 const CONTACT_EMAIL = 'info@brighthopeeducation.com'
-const CONTACT_PHONE = '07551909493'
-const PHONE_DISPLAY = `${CONTACT_PHONE.slice(0, 5)} ${CONTACT_PHONE.slice(5)}`
-const PHONE_HREF = `tel:+44${CONTACT_PHONE.slice(1)}`
 
 /* `key` is what a link into this page can preselect, e.g. /contact?reason=sponsor.
    `label` is what the visitor sees and what the office receives. */
@@ -294,12 +291,6 @@ export default function Contact() {
             church, school or company supporting a student, send us a message. It goes to the office,
             and a person reads and replies to every one.
           </Lead>
-          <p className="mt-4 font-body text-base text-ink-soft lg:hidden">
-            Prefer to ring?{' '}
-            <a href={PHONE_HREF} className={linkClass}>
-              {PHONE_DISPLAY}
-            </a>
-          </p>
         </Container>
       </Section>
 
@@ -523,8 +514,7 @@ export default function Contact() {
                   >
                     <p>
                       Sorry, your message did not send. What you wrote is still in the form above, so
-                      nothing is lost. You can try again, ring us on{' '}
-                      <a href={PHONE_HREF} className={linkClass}>{PHONE_DISPLAY}</a>, or{' '}
+                      nothing is lost. You can try again, or{' '}
                       <a href={buildMailto(values)} className={linkClass}>
                         email it to us at {CONTACT_EMAIL}
                       </a>{' '}
@@ -540,8 +530,7 @@ export default function Contact() {
                   >
                     <p>
                       Your email app should now have opened with your message ready to go. Please press
-                      send there. If nothing opened, ring us on{' '}
-                      <a href={PHONE_HREF} className={linkClass}>{PHONE_DISPLAY}</a> or email us at{' '}
+                      send there. If nothing opened, email us at{' '}
                       <a href={buildMailto(values)} className={linkClass}>{CONTACT_EMAIL}</a>. You
                       can copy your message from the box below, so you do not have to type it again.
                     </p>
@@ -586,8 +575,7 @@ export default function Contact() {
                   {!FORM_READY && (
                     <p className="mt-4 font-body text-sm leading-relaxed text-muted">
                       Pressing send opens your email app with your message filled in, ready to go to{' '}
-                      {CONTACT_EMAIL}. Or ring us on{' '}
-                      <a href={PHONE_HREF} className={linkClass}>{PHONE_DISPLAY}</a>.
+                      {CONTACT_EMAIL}.
                     </p>
                   )}
                 </div>
@@ -598,18 +586,9 @@ export default function Contact() {
             <aside className="space-y-6 lg:col-span-5">
               <Card className="bg-sand-light">
                 <h2 className="font-display text-2xl font-semibold text-primary">
-                  Prefer to speak to someone?
+                  Where to find us
                 </h2>
                 <ul className="mt-6 space-y-5">
-                  <li className="flex gap-3">
-                    <Phone aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-primary" />
-                    <a
-                      href={PHONE_HREF}
-                      className="rounded font-body text-lg font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-sand-light"
-                    >
-                      {PHONE_DISPLAY}
-                    </a>
-                  </li>
                   <li className="flex gap-3">
                     <MapPin aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-primary" />
                     <address className="font-body text-base not-italic leading-relaxed text-ink-soft">
@@ -666,8 +645,8 @@ export default function Contact() {
                   Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-muted">
-                  If something about your enquiry is not handled as it should be, tell us: ring{' '}
-                  {PHONE_DISPLAY} or write to the registered address above, and it goes to the
+                  If something about your enquiry is not handled as it should be, tell us: email{' '}
+                  {CONTACT_EMAIL} or write to the registered address above, and it goes to the
                   trustees.
                 </p>
               </Card>

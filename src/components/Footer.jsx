@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 
 /* lucide-react no longer ships brand marks, so the three social marks are
    drawn here rather than swapped for a generic icon nobody recognises. */
@@ -87,10 +87,6 @@ export default function Footer() {
                   <span className="block text-paper/60">Registered address</span>
                   Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR
                 </span>
-              </li>
-              <li className="flex gap-3">
-                <Phone aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+447551909493" className={linkClass}>07551909493</a>
               </li>
               <li className="flex gap-3">
                 <Mail aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-accent" />

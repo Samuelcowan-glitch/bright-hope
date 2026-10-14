@@ -295,13 +295,6 @@ export default function About() {
                   Registered address
                 </span>
                 Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR
-                <br />
-                <a
-                  href="tel:+447551909493"
-                  className="mt-2 inline-block rounded font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-sand"
-                >
-                  07551909493
-                </a>
               </address>
               <p className="mt-6 max-w-prose font-body text-base leading-relaxed text-ink-soft">
                 We are a small team, so give us a couple of days to come back to you. How we handle
