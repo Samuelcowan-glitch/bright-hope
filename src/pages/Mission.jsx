@@ -5,9 +5,9 @@ import { Section, Container, Eyebrow, H2, Lead, Button, Card } from '../componen
 
 /* /mission — mission and vision, both registered objects stated plainly,
    education, community, sustainability, the future, and the four sponsor
-   quotes. The quotes are reproduced as the sponsors wrote them, with no
-   rating graphics, and the registration is attributed to Rainbow House
-   Kenya. */
+   quotes. The quotes are reproduced as the sponsors wrote them, with
+   children's names removed for safeguarding and no rating graphics, and
+   the registration is attributed to Rainbow House Kenya. */
 
 const OBJECTS = [
   {
@@ -27,19 +27,19 @@ const PILLARS = [
     eyebrow: 'Education',
     heading: 'Access, in one place, done properly',
     body:
-      'Our purpose is to expand access to education in Gede, Kilifi. Through home visits and close collaboration with local schools, we aim to empower children by creating opportunities for learning, support, and a sense of belonging. Ultimately, we seek to enable young people to progress into higher education and unlock pathways to long-term prosperity.',
+      'Our purpose is to expand access to education in Gede, Kilifi. Through home visits and close collaboration with local schools, we aim to support children’s learning and their sense of belonging. Our hope is that more young people are able to go on to higher education if they choose to.',
   },
   {
     eyebrow: 'Community',
     heading: 'Led by the people who live there',
     body:
-      'Communities in Gede and Watamu are at the heart of our work. By collaborating with local leaders and employing local staff, we ensure our programmes are community-led and reach those who need them most, maximising our impact on individual lives and the wider community.',
+      'Communities in Gede and Watamu are at the heart of our work. By collaborating with local leaders and employing local staff, we aim for our programmes to be community-led and to reach the children who need them most.',
   },
   {
     eyebrow: 'Sustainability',
     heading: 'Resilience that outlasts the sponsorship',
     body:
-      'At the heart of our work is strengthening resilience and creating long-term prosperity in Kilifi County. Through sustainable sponsorship and community-led support, we provide education that builds confidence, safety, skills, and knowledge for the next generation, empowering young people to uplift themselves, their families, and their communities.',
+      'We hope to support long-term resilience in Kilifi County. Through steady sponsorship and community-led support, we help children stay in school, where their teachers build confidence, safety, skills and knowledge in the next generation of young people in their own communities.',
   },
 ]
 
@@ -51,16 +51,16 @@ const TESTIMONIALS = [
   },
   {
     name: 'Jeanie',
-    quote: 'Thank you for the letter from Agnes, it is wonderful to hear from her',
+    quote: 'Thank you for the letter from [name], it is wonderful to hear from her',
   },
   {
     name: 'Karen',
     quote:
-      'Thank you so much for telling me about Joseph & his family, I don’t know how to say thank you enough for all that you do',
+      'Thank you so much for telling me about [name] & his family, I don’t know how to say thank you enough for all that you do',
   },
   {
     name: 'Lynda',
-    quote: 'I received John’s Card and letter, it was beautiful, Thank you',
+    quote: 'I received [name]’s Card and letter, it was beautiful, Thank you',
   },
 ]
 
@@ -102,9 +102,9 @@ export default function Mission() {
                   background or circumstance.
                 </p>
                 <p>
-                  Education is what families here are trying hardest to afford. Through access to
-                  schooling, we aim to give young people from families who cannot meet school costs
-                  the learning and the qualifications to make their own choices as adults.
+                  Education is what families here are trying hardest to afford. By helping with
+                  school costs, we aim to help young people stay in school and gain the learning and
+                  the qualifications to make their own choices as adults.
                 </p>
                 <p>
                   We work in partnership with local communities, schools and families to strengthen
@@ -117,7 +117,7 @@ export default function Mission() {
               <figure className="overflow-hidden rounded-2xl border border-divider bg-surface shadow-card">
                 <img
                   src={asset('/img/sponsors-01.jpg')}
-                  alt="Four young children in checked school shirts and maroon uniforms outside a doorway, one of them holding a lined exercise book."
+                  alt="Four young children in Kilifi County, one of them holding an exercise book."
                   className="h-72 w-full object-cover sm:h-96"
                   width="1200"
                   height="1300"
@@ -216,9 +216,8 @@ export default function Mission() {
                   every afternoon.
                 </p>
                 <p>
-                  Long-term sponsorship is particularly valuable because it enables us to maximise
-                  our impact throughout an educational journey and embed our long-term goal for
-                  community resilience.
+                  Long-term sponsorship is particularly valuable because it means a child&rsquo;s
+                  school costs can be covered right through their education, not just for a year.
                 </p>
                 <p>We welcome all conversations, support and donations.</p>
               </div>
@@ -239,7 +238,7 @@ export default function Mission() {
           <Eyebrow>Our testimonials</Eyebrow>
           <H2>Four of our sponsors, in their own words</H2>
           <p className="mt-5 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
-            Quoted as our sponsors wrote them.
+            Quoted as our sponsors wrote them, with children&rsquo;s names removed.
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:gap-8">
             {TESTIMONIALS.map((testimonial) => (
@@ -264,8 +263,8 @@ export default function Mission() {
               Join us in our mission
             </h2>
             <p className="mt-5 font-body text-lg leading-relaxed text-paper/90 sm:text-xl sm:leading-relaxed">
-              £15 a month sponsors a child through primary school and £35 a month through secondary
-              school. Vocational and higher education sponsorship is arranged with us directly.
+              £15 a month covers a primary school child&rsquo;s school costs, and £35 a month covers a
+              secondary school student&rsquo;s. Vocational and higher education sponsorship is arranged with us directly.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button

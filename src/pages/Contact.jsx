@@ -412,7 +412,7 @@ export default function Contact() {
                 <ol className="mt-5 space-y-4 font-body text-base leading-relaxed text-ink-soft">
                   {[
                     'Your message goes to the office inbox and a person reads it. Usually you will hear back within two or three days.',
-                    'If you asked about sponsoring a child, we write back about a child or student who is waiting, their stage of school and what the year costs.',
+                    'If you asked about sponsoring a child, we write back about a child or student who does not yet have a sponsor, their stage of school and what the year costs.',
                     'If you are happy to go ahead, we send you the details to set up a standing order from your own bank – £15 a month for primary, £35 for secondary, or an agreed amount for vocational and higher education.',
                     'Letters and cards begin coming back to you during the school year, passed on through us.',
                   ].map((step, index) => (

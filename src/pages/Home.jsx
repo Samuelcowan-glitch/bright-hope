@@ -40,7 +40,7 @@ const STEPS = [
   },
   {
     title: 'We talk',
-    body: 'By email or telephone, whichever you prefer. We will tell you about a child who is waiting, what their school costs, and what the next school year looks like for them.',
+    body: 'By email or telephone, whichever you prefer. We will tell you about a child who does not yet have a sponsor, what their school costs, and what the next school year looks like for them.',
   },
   {
     title: 'We send you the standing order details',
@@ -60,16 +60,16 @@ const TESTIMONIALS = [
   },
   {
     name: 'Jeanie',
-    quote: 'Thank you for the letter from Agnes, it is wonderful to hear from her',
+    quote: 'Thank you for the letter from [name], it is wonderful to hear from her',
   },
   {
     name: 'Karen',
     quote:
-      "Thank you so much for telling me about Joseph & his family, I don't know how to say thank you enough for all that you do",
+      "Thank you so much for telling me about [name] & his family, I don't know how to say thank you enough for all that you do",
   },
   {
     name: 'Lynda',
-    quote: "I received John's Card and letter, it was beautiful, Thank you",
+    quote: "I received [name]'s Card and letter, it was beautiful, Thank you",
   },
 ]
 
@@ -82,7 +82,7 @@ const FAQS = [
   {
     question: 'Can I choose a child?',
     answer:
-      'You can tell us the stage you want to support — primary, secondary, or vocational and higher education. We will then tell you who is waiting and why, before anything is set up.',
+      'You can tell us the stage you want to support — primary, secondary, or vocational and higher education. We will then tell you about a child or student at that stage who does not yet have a sponsor, before anything is set up.',
   },
   {
     question: 'Do I have to be Christian to sponsor a child?',
@@ -135,7 +135,7 @@ export default function Home() {
     <Layout>
       <SEO
         title="Bright Hope Education Project | Sponsoring children's education in Gede and Watamu, Kenya"
-        description="Funding school places for 29 children in Gede and Watamu, Kilifi County, Kenya. £15 a month for primary, £35 a month for secondary. All funding for the children goes directly for the children."
+        description="Funding school places for 29 children in Gede and Watamu, Kilifi County, Kenya. All funding for the children goes directly for the children."
       />
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
@@ -154,11 +154,6 @@ export default function Home() {
                 the Kenyan coast. {PROJECT_OF}
               </Lead>
 
-              <p className="mt-6 max-w-prose rounded-2xl border border-divider bg-surface px-5 py-4 font-body text-base font-semibold leading-relaxed text-ink sm:text-lg">
-                £15 a month sponsors a primary school child. £35 a month sponsors a secondary school
-                child.
-              </p>
-
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Button to="/sponsor">Sponsor a child</Button>
                 <Button to="/gede" variant="ghost">
@@ -171,7 +166,7 @@ export default function Home() {
               <figure className="m-0">
                 <img
                   src={asset('/img/sponsors-01.jpg')}
-                  alt="Four young children standing outside a timber-walled home in Kilifi County, three of them in the maroon gingham school uniform, one holding a new ruled exercise book."
+                  alt="Four young children in Kilifi County, one of them holding an exercise book."
                   width="1556"
                   height="1600"
                   className="aspect-[4/5] w-full rounded-4xl object-cover shadow-card sm:aspect-[5/4] lg:aspect-[4/5]"
@@ -226,8 +221,8 @@ export default function Home() {
             </p>
 
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
-              A term&rsquo;s costs can exceed a month&rsquo;s income. These are families who cannot
-              meet school costs, year after year.
+              A term&rsquo;s costs can exceed a month&rsquo;s income, and those costs come round
+              again every year.
             </p>
 
             <p className="mt-8">
@@ -316,9 +311,8 @@ export default function Home() {
           </div>
 
           <p className="mt-10 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
-            We ask people to think in school years rather than months. A child who knows next
-            year&rsquo;s fees are covered behaves differently from a child who does not, and so does
-            the school.
+            We ask people to think in school years rather than months. When next year&rsquo;s fees
+            are covered, the child, their family and the school can plan ahead.
           </p>
         </Container>
       </Section>
@@ -329,7 +323,7 @@ export default function Home() {
           <H2>How sponsorship starts</H2>
           <Lead>
             There is no card payment button on this website. Sponsorship here begins with a
-            conversation, because a sponsor is taking on a child&rsquo;s schooling for years.
+            conversation, because sponsorship supports a child&rsquo;s schooling over several years.
           </Lead>
 
           <ol className="mt-12 grid list-none gap-6 p-0 sm:grid-cols-2">
@@ -395,7 +389,7 @@ export default function Home() {
           </ul>
 
           <p className="mt-8 font-body text-base text-muted">
-            Quoted as our sponsors wrote them.
+            Quoted as our sponsors wrote them, with children’s names removed.
           </p>
 
           <p className="mt-6">
@@ -459,8 +453,8 @@ export default function Home() {
               </p>
 
               <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
-                The children we support live with their families or with foster parents. What they
-                need from us is the school fees.
+                The children we support live with their families or with foster parents. Our part is
+                the cost of their schooling.
               </p>
 
               <div className="mt-8">
@@ -473,7 +467,7 @@ export default function Home() {
             <figure className="m-0">
               <img
                 src={asset('/img/gede-01.jpg')}
-                alt="Children in bright blue T-shirts gathered under the corrugated-iron roof and timber trusses of the community hub at Gede, one of them holding a mason's trowel."
+                alt="A group of children in Gede."
                 width="1200"
                 height="1600"
                 loading="lazy"
@@ -557,11 +551,11 @@ export default function Home() {
       <Section className="bg-sand-light">
         <Container>
           <div className="max-w-prose">
-            <H2>Join our mission today</H2>
+            <H2>Join our mission</H2>
 
             <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
-              Your donations help us continue our mission to reach those who need it most. Every
-              contribution, no matter the size, makes a real difference.
+              Your donations help us keep children in Gede and Watamu in school. Every contribution,
+              whatever the size, is welcome.
             </p>
 
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">

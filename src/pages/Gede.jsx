@@ -28,8 +28,8 @@ export default function Gede() {
               </h1>
               <Lead>
                 Two places on the Kenyan coast, forty minutes inland and ten minutes from the sea.
-                Ruins, farmland, small schools, large families, and a lot of children who could be
-                in a classroom.
+                Ruins, farmland, small schools, and the families and teachers who keep children
+                learning.
               </Lead>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Button to="/sponsor">Sponsor a child</Button>
@@ -43,7 +43,7 @@ export default function Gede() {
               <figure className="overflow-hidden rounded-2xl border border-divider bg-surface shadow-card">
                 <img
                   src={asset('/img/gede-01.jpg')}
-                  alt="Children in matching blue T-shirts standing together under the corrugated roof of a community building in Gede."
+                  alt="Children standing together in a community building in Gede."
                   className="h-64 w-full object-cover sm:h-80 lg:h-[26rem]"
                   width="1200"
                   height="900"
@@ -76,8 +76,8 @@ export default function Gede() {
                 </p>
                 <p>
                   Watamu is where some of our students go to secondary school, which is why travel
-                  costs appear in the £35 a month package. Distance is not a detail here. It is the
-                  difference between sitting an exam and not sitting it.
+                  costs are part of what £35 a month covers for a secondary student. Distance is not
+                  a detail here: getting to school, and to exams, costs money.
                 </p>
               </div>
 
@@ -97,7 +97,7 @@ export default function Gede() {
                 <div>
                   <dt className="sr-only">Monthly cost of primary sponsorship</dt>
                   <dd>
-                    <Stat figure="£15" label="A month for primary school — £35 for secondary" />
+                    <Stat figure="£15" label="A month covers a primary school child’s school costs — £35 for secondary" />
                   </dd>
                 </div>
               </dl>
@@ -133,7 +133,7 @@ export default function Gede() {
               <figure className="overflow-hidden rounded-2xl border border-divider bg-surface shadow-card">
                 <img
                   src={asset('/img/gede-02.jpg')}
-                  alt="A group of children waving and laughing through a gap in an old coral-brick wall."
+                  alt="A group of children waving and laughing."
                   className="h-64 w-full object-cover sm:h-80 lg:h-[24rem]"
                   width="1200"
                   height="800"
@@ -158,7 +158,7 @@ export default function Gede() {
                 Where the homework gets done
               </h3>
               <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
-                A library in a village where most households own no books is not a nice extra. It is
+                The library is not a nice extra. It is
                 where homework gets done, where a secondary student can revise somewhere quiet, and
                 where a child who has fallen behind can be helped by someone with the patience to do
                 it.
@@ -194,7 +194,7 @@ export default function Gede() {
                   Bright Hope Education Project is a project of Rainbow House Kenya.
                 </p>
                 <p>
-                  Rainbow House Kenya are the reason there is any work in Gede at all. Communities in Gede
+                  Rainbow House Kenya are the reason this work in Gede exists. Communities in Gede
                   and Watamu are at the heart of the work. By collaborating with local leaders and
                   employing local staff, we aim to keep the programmes community-led and reaching
                   those who need them most.
@@ -216,9 +216,8 @@ export default function Gede() {
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p>
-                  Through home visits and close collaboration with local schools, we aim to empower
-                  children by creating opportunities for learning, support, and a sense of
-                  belonging.
+                  Through home visits and close collaboration with local schools, we aim to support
+                  children&rsquo;s learning and their sense of belonging.
                 </p>
                 <p>
                   Sponsorship covers the costs the schools set, and nothing a family is left to find
@@ -240,37 +239,6 @@ export default function Gede() {
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Closing band */}
-      <Section className="bg-growth">
-        <Container>
-          <div className="max-w-prose">
-            <h2 className="font-display text-display-sm font-semibold text-paper sm:text-display">
-              Twenty-nine children in Gede have a sponsor
-            </h2>
-            <p className="mt-5 font-body text-lg leading-relaxed text-paper/90 sm:text-xl sm:leading-relaxed">
-              There are others in Gede and Watamu whose families cannot meet school costs. If you
-              would like to sponsor one of them, we will tell you who is waiting and why.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Button
-                to="/sponsor"
-                variant="ghost"
-                className="border-paper/70 bg-paper text-growth hover:border-paper hover:bg-sand focus-visible:ring-paper focus-visible:ring-offset-growth"
-              >
-                Sponsor a child
-              </Button>
-              <Button
-                to="/blog"
-                variant="ghost"
-                className="border-paper/60 text-paper hover:border-paper hover:bg-paper/10 focus-visible:ring-paper focus-visible:ring-offset-growth"
-              >
-                Read the latest post
-              </Button>
             </div>
           </div>
         </Container>

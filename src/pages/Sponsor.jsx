@@ -81,7 +81,7 @@ const PACKAGES = [
     Icon: School,
     body: [
       'Primary school is where a family either manages the costs or does not. A term’s fees can exceed a month’s income, and a child who cannot bring the fee cannot bring the exercise books either.',
-      'For £15 a month a child has the things a classroom quietly assumes you own, and a school place that is paid for before the term starts rather than argued about halfway through it.',
+      '£15 a month covers the things a classroom quietly assumes you own, and a school place that is paid for before the term starts rather than left unpaid halfway through it.',
     ],
     covers: [
       'School fees',
@@ -102,7 +102,7 @@ const PACKAGES = [
     Icon: BookOpen,
     body: [
       'Secondary school costs more and matters enormously, because this is where the Kenyan national exams decide what a young person can do next.',
-      'Some of our students travel to school in Watamu, which is why £35 covers more than £15 does. Distance is not a detail here; it is the difference between sitting an exam and not sitting it.',
+      'Some of our students travel to school in Watamu, which is why £35 covers more than £15 does: it includes travel to and from school.',
     ],
     covers: [
       'School fees',
@@ -146,7 +146,7 @@ const STEPS = [
   },
   {
     title: 'We talk',
-    body: 'By email or telephone, whichever you prefer. We will tell you about a child or student who is waiting, what their school costs, and what the next school year looks like for them.',
+    body: 'By email or telephone, whichever you prefer. We will tell you about a child or student who does not yet have a sponsor, what their school costs, and what the next school year looks like for them.',
     Icon: Phone,
   },
   {
@@ -177,7 +177,7 @@ const FAQS = [
   },
   {
     q: 'Can I choose a child?',
-    a: 'You can tell us the stage you want to support — primary, secondary, or vocational and higher education. We will then tell you who is waiting, and why, before anything is set up.',
+    a: 'You can tell us the stage you want to support — primary, secondary, or vocational and higher education. We will then tell you about a child or student at that stage who does not yet have a sponsor, before anything is set up.',
   },
   {
     q: 'What if I have to stop?',
@@ -189,7 +189,7 @@ const FAQS = [
   },
   {
     q: 'Why are there no photographs of named children on this site?',
-    a: 'Because the children are children, and they live with their families or with foster parents. We do not publish a photograph next to a name. What you will see on this site is the place: classrooms, books, growing beds, the road into Gede.',
+    a: 'Because the children are children, and they live with their families or with foster parents. We do not publish a photograph next to a name.',
   },
   {
     q: 'Can my church, school or company support a child?',
@@ -197,25 +197,26 @@ const FAQS = [
   },
   {
     q: 'Do I have to be Christian to sponsor a child?',
-    a: 'No. This is Christian work and we are open about it, but sponsors of any faith or none are welcome, and children are supported on the basis of need.',
+    a: 'No. This is Christian work and we are open about it, but sponsors of any faith or none are welcome, and children are supported on the basis of need, whatever their family’s faith.',
   },
 ]
 
-/* Quoted as our sponsors wrote them. No star graphics: we do not run a rating
-   system and will not import one onto a charity page. */
+/* Quoted as our sponsors wrote them, with children's names removed for
+   safeguarding. No star graphics: we do not run a rating system and will not
+   import one onto a charity page. */
 const TESTIMONIALS = [
   {
     name: 'Sue',
     quote:
       'I like knowing my money goes directly to educate my sponsored child. They are a small charity that you can trust to know your money is used well',
   },
-  { name: 'Jeanie', quote: 'Thank you for the letter from Agnes, it is wonderful to hear from her' },
+  { name: 'Jeanie', quote: 'Thank you for the letter from [name], it is wonderful to hear from her' },
   {
     name: 'Karen',
     quote:
-      'Thank you so much for telling me about Joseph & his family, I don’t know how to say thank you enough for all that you do',
+      'Thank you so much for telling me about [name] & his family, I don’t know how to say thank you enough for all that you do',
   },
-  { name: 'Lynda', quote: 'I received John’s Card and letter, it was beautiful, Thank you' },
+  { name: 'Lynda', quote: 'I received [name]’s Card and letter, it was beautiful, Thank you' },
 ]
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -330,7 +331,7 @@ export default function Sponsor() {
             <div>
               <img
                 src={asset('/img/gede-01.jpg')}
-                alt="Children in blue T-shirts gathered under a corrugated-iron shelter in Gede, Kilifi County, Kenya."
+                alt="Children gathered together in Gede, Kilifi County, Kenya."
                 className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
                 loading="eager"
               />
@@ -393,10 +394,10 @@ export default function Sponsor() {
       <Section id="packages" className="bg-sand-light">
         <Container>
           <Eyebrow>Three stages</Eyebrow>
-          <H2>Our sponsor packages</H2>
+          <H2>Sponsorship at each stage</H2>
           <Lead>
             By funding all three stages of education in Kenya we aim to support a whole school
-            career rather than a single year of one. Each package pays for the same basket of
+            career rather than a single year of one. Each sponsorship pays for the same basket of
             things; what changes is the stage, and what that stage costs.
           </Lead>
 
@@ -506,7 +507,7 @@ export default function Sponsor() {
               <H2>What you receive</H2>
               <p className="mt-5 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
                 Letters, in the child’s own handwriting, and cards. We pass them on as they are
-                written. That is the proof that a term’s fees turned into a term at school.
+                written. That is how you hear that a term’s fees turned into a term at school.
               </p>
               <p className="mt-5 max-w-prose font-body text-base leading-relaxed text-ink-soft">
                 We will also tell you when something changes — a move of school, a family
@@ -555,9 +556,9 @@ export default function Sponsor() {
               <Eyebrow>School years, not months</Eyebrow>
               <H2>Long-term sponsorship</H2>
               <p className="mt-5 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
-                Long-term sponsorship is particularly valuable because it enables us to maximise our
-                impact throughout an educational journey and embed our long-term goal for community
-                resilience.
+                Long-term sponsorship matters because it lets a child, their family and their school
+                plan for a whole education rather than a single year, in support of our long-term
+                goal of community resilience.
               </p>
               <p className="mt-5 max-w-prose font-body text-base leading-relaxed text-ink-soft">
                 A child whose fees are covered next year can be planned for. So can a school, and so
@@ -582,7 +583,7 @@ export default function Sponsor() {
               <figure>
                 <img
                   src={asset('/img/sponsors-01.jpg')}
-                  alt="Four young children in maroon-checked school uniform standing outside a house in Gede, one holding an exercise book."
+                  alt="Young children, one holding an exercise book."
                   className="aspect-[3/2] w-full rounded-2xl object-cover shadow-card"
                   loading="lazy"
                 />
@@ -620,7 +621,7 @@ export default function Sponsor() {
         <Container>
           <Eyebrow>Four sponsors</Eyebrow>
           <H2>In our sponsors’ own words</H2>
-          <Lead>Quoted as our sponsors wrote them.</Lead>
+          <Lead>Quoted as our sponsors wrote them, with children’s names removed.</Lead>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2">
             {TESTIMONIALS.map(({ name, quote }) => (
               <li key={name}>
@@ -634,8 +635,8 @@ export default function Sponsor() {
             ))}
           </ul>
           <p className="mt-8 max-w-prose font-body text-base leading-relaxed text-muted">
-            Agnes, Joseph and John are named here only because the sponsors who wrote to us named
-            them. We do not publish a child’s photograph beside a child’s name.
+            We have taken the children’s names out of these quotes. We do not publish a child’s
+            photograph beside a child’s name.
           </p>
         </Container>
       </Section>
@@ -958,7 +959,7 @@ export default function Sponsor() {
                   <li className="flex gap-3">
                     <School aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-growth" />
                     <span>
-                      We tell you about a child or student who is waiting — their stage of school,
+                      We tell you about a child or student who does not yet have a sponsor — their stage of school,
                       and what the year costs.
                     </span>
                   </li>

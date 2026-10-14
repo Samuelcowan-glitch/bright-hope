@@ -35,9 +35,9 @@ export default function About() {
                 Who we are
               </h1>
               <Lead>
-                A small Christian group in Surrey, the Rainbow House Kenya team who have been in Gede
-                far longer than we have, and twenty-nine children whose school costs are paid each month by
-                somebody in Britain.
+                A small Christian group in Surrey and the Rainbow House Kenya team, who have been in Gede
+                far longer than we have, working alongside the families and schools of twenty-nine
+                sponsored children.
               </Lead>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button to="/sponsor">Sponsor a child</Button>
@@ -48,7 +48,7 @@ export default function About() {
             <div className="lg:col-span-5">
               <img
                 src={asset('/img/gede-01.jpg')}
-                alt="Children in matching blue t-shirts standing together under the corrugated roof of a community building in Gede, Kilifi County."
+                alt="Children standing together in Gede, Kilifi County."
                 className="h-64 w-full rounded-2xl object-cover shadow-card sm:h-80 lg:h-[26rem]"
                 width="1200"
                 height="1600"
@@ -70,7 +70,7 @@ export default function About() {
               <H2>What we do</H2>
               <Lead>
                 We fund access to education for children in Gede and Watamu, in Kilifi County on the
-                Kenyan coast – children whose families cannot meet the cost of school.
+                Kenyan coast, helping families meet the cost of school.
               </Lead>
               <div className="mt-6 max-w-prose space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
                 <p>
@@ -79,8 +79,8 @@ export default function About() {
                   whether it is working.
                 </p>
                 <p>
-                  Twenty-nine children are sponsored today. Sponsorship is £15 a month for a primary
-                  school child and £35 a month for a secondary school student. Vocational and higher
+                  Twenty-nine children are sponsored today. £15 a month covers a primary school
+                  child’s school costs, and £35 a month covers a secondary school student’s. Vocational and higher
                   education is sponsored by arrangement, because a trade course and a degree do not
                   cost the same thing.
                 </p>
@@ -88,15 +88,15 @@ export default function About() {
 
               <div className="mt-10 grid gap-8 sm:grid-cols-3">
                 <Stat figure="29" label="Children sponsored, as at October 2026" />
-                <Stat figure="£15" label="A month for a primary school child" />
-                <Stat figure="£35" label="A month for a secondary school student" />
+                <Stat figure="£15" label="A month covers a primary school child’s school costs" />
+                <Stat figure="£35" label="A month covers a secondary school student’s school costs" />
               </div>
             </div>
 
             <div className="lg:col-span-5">
               <img
                 src={asset('/img/sponsors-01.jpg')}
-                alt="Four young children in checked maroon school uniform outside a home in Kilifi County, one of them holding an exercise book."
+                alt="Four young children in Kilifi County, one of them holding an exercise book."
                 className="h-72 w-full rounded-2xl object-cover shadow-card sm:h-96 lg:h-full lg:max-h-[32rem]"
                 width="1546"
                 height="1600"
@@ -128,7 +128,7 @@ export default function About() {
 
             <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
               <p>
-                Rainbow House Kenya is the reason there is any work in Gede at all. They hold the
+                Rainbow House Kenya is the reason this work in Gede exists. They hold the
                 ABBAFATHERLAND property in trust, they run the community hub, the library and the
                 education resource centre on it, and they employ the local people who know the
                 families and the schools. Bright Hope Education Project is their education
@@ -137,7 +137,7 @@ export default function About() {
               </p>
               <p>
                 Within Rainbow House Kenya the work divides simply. Bright Hope funds the school
-                costs; the team in Gede tell us what is actually needed, and which child is next.
+                costs; the team in Gede tell us what is actually needed, and which children to support next.
                 That is also why our Instagram and Facebook are Rainbow House Kenya&rsquo;s accounts.
               </p>
             </div>
@@ -159,7 +159,7 @@ export default function About() {
             <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
               <p>
                 <strong className="font-semibold text-ink">
-                  Here is why that figure can be 100 and not 92.
+                  Here is why that figure can be 100.
                 </strong>{' '}
                 There is no card payment button on this website, so there is no payment processor
                 taking a percentage, no fundraising platform fee and no advertising spend between

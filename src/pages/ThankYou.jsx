@@ -7,7 +7,7 @@ import { Section, Container, Eyebrow, H2, Lead, Button, Card } from '../componen
 
 const NEXT_STEPS = [
   'We reply and ask anything we need to know.',
-  'We tell you about a child or student who is waiting – their stage of school, and what the year costs.',
+  'We tell you about a child or student who does not yet have a sponsor – their stage of school, and what the year costs.',
   'If you are happy to go ahead, we send you the details to set up a standing order from your own bank. £15 a month for primary, £35 for secondary, or an agreed amount for vocational and higher education.',
   'Letters and cards start coming back to you during the school year.',
 ]
@@ -114,7 +114,7 @@ export default function ThankYou() {
 
                 <img
                   src={asset('/img/gede-02.jpg')}
-                  alt="Children leaning through a gap in a brick wall, hands raised and waving."
+                  alt="Children in Gede waving, hands raised."
                   className="mt-8 h-48 w-full rounded-xl object-cover"
                   width="612"
                   height="408"

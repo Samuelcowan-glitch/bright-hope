@@ -148,8 +148,8 @@ export default function PrivacyPolicy() {
                 We do not collect information from children through this website. Information about
                 the children we support is held securely and is not published. We do not publish a
                 photograph of an identifiable child alongside a name, and no child&rsquo;s home
-                location appears on this site. Sponsors receive letters and cards from their own
-                sponsored child privately, through us.
+                location appears on this site. Sponsors receive letters and cards from the child
+                they sponsor privately, through us.
               </p>
             </section>
 
@@ -217,8 +217,8 @@ export default function PrivacyPolicy() {
             </Card>
 
             <p className="mt-10 font-body text-sm leading-relaxed text-muted">
-              Photography: every photograph on this site was taken in Gede and Watamu and supplied
-              by Rainbow House Kenya. No stock or generated image is captioned as a real
+              Photography: the photographs of Gede and Watamu on this site were supplied by
+              Rainbow House Kenya. No stock or generated image is captioned as a real
               place, and no child is named beside a photograph.
             </p>
             <p className="mt-4 font-body text-sm leading-relaxed text-muted">

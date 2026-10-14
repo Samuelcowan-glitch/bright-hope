@@ -136,10 +136,10 @@ export default function BlogPost() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <H2>Twenty-nine children are in school. There is room for the thirtieth.</H2>
+              <H2>Twenty-nine children are sponsored through Bright Hope today.</H2>
               <Lead>
-                £15 a month sponsors a primary school child. £35 a month sponsors a secondary school
-                child. Vocational and higher education is arranged student by student, so tell us
+                £15 a month covers a primary school child’s school costs. £35 a month covers a
+                secondary school student’s. Vocational and higher education is arranged student by student, so tell us
                 what interests you and we will write back.
               </Lead>
             </div>
