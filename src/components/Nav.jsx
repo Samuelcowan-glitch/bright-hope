@@ -5,6 +5,7 @@ import asset from '../lib/asset.js'
 import { Button } from './ui.jsx'
 
 const LINKS = [
+  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Our Mission', to: '/mission' },
   { label: 'Gede', to: '/gede' },
