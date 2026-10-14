@@ -118,7 +118,7 @@ export default function Footer() {
               ))}
             </ul>
             <p className="mt-4 font-body text-sm leading-relaxed text-paper/70">
-              Our Instagram and Facebook are run with our partner Rainbow House Kenya.
+              Our Instagram and Facebook are run by Rainbow House Kenya, whose project this is.
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function Footer() {
             which is Rainbow House Kenya — not Bright Hope Education Project. */}
         <div className="mt-14 border-t border-paper/15 pt-8">
           <p className="max-w-prose font-body text-sm leading-relaxed text-paper/75">
-            Bright Hope Education Project works in partnership with Rainbow House Kenya, a charity
+            Bright Hope Education Project is a project of Rainbow House Kenya, a charity
             registered in England and Wales, number 1111579.
           </p>
           <p className="mt-4 font-body text-sm text-paper/60">

@@ -81,7 +81,7 @@ export default function Mission() {
               Our Mission, Vision and Goals
             </h1>
             <Lead>
-              Bright Hope Education Project works in partnership with Rainbow House Kenya, a charity
+              Bright Hope Education Project is a project of Rainbow House Kenya, a charity
               registered in England and Wales, number 1111579. What follows is what we are trying to
               do in Gede and Watamu, and the purposes we are registered to pursue.
             </Lead>
@@ -142,8 +142,8 @@ export default function Mission() {
               <H2>The registered purposes this work is pursued under</H2>
               <p className="mt-5 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
                 Area of benefit: Kenya. Both objects are on the register, and we would rather state
-                them than leave you to guess. The registration is held by our partner, Rainbow
-                House Kenya.
+                them than leave you to guess. The registration is held by Rainbow House Kenya, whose
+                project this is.
               </p>
             </div>
 
@@ -155,7 +155,7 @@ export default function Mission() {
                       <div className="flex gap-5">
                         <span
                           aria-hidden="true"
-                          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary font-display text-xl font-semibold text-paper"
+                          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-growth font-display text-xl font-semibold text-paper"
                         >
                           {object.number}
                         </span>

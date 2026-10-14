@@ -3,7 +3,7 @@ import SEO from '../components/SEO.jsx'
 import asset from '../lib/asset.js'
 import { Section, Container, Eyebrow, H2, Lead, Button, Stat, Card } from '../components/ui.jsx'
 
-/* /gede — the place, ABBAFATHERLAND, the library, the growing, the partner,
+/* /gede — the place, ABBAFATHERLAND, the library, the growing, Rainbow House Kenya,
    and how the schools work with us. Every factual claim here is taken from
    the approved copy; nothing about an education coordinator, nothing about
    an allocation policy, and the registration is attributed to Rainbow House
@@ -14,7 +14,7 @@ export default function Gede() {
     <Layout>
       <SEO
         title="Gede and Watamu, Kilifi County | Where we work | Bright Hope Education Project"
-        description="Gede and Watamu in Kilifi County, Kenya: the schools, the families, the ABBAFATHERLAND community hub and library, and our partnership with Rainbow House Kenya."
+        description="Gede and Watamu in Kilifi County, Kenya: the schools, the families, the ABBAFATHERLAND community hub and library, and Rainbow House Kenya, whose project we are."
       />
 
       {/* Hero */}
@@ -180,22 +180,22 @@ export default function Gede() {
         </Container>
       </Section>
 
-      {/* Our partner */}
+      {/* Rainbow House Kenya */}
       <Section className="bg-sand-light">
         <Container>
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
             <div className="lg:col-span-5">
-              <Eyebrow>Our partner</Eyebrow>
+              <Eyebrow>Whose project we are</Eyebrow>
               <H2>Rainbow House Kenya</H2>
             </div>
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p className="font-semibold text-ink">
-                  Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                  Bright Hope Education Project is a project of Rainbow House Kenya, a
                   charity registered in England and Wales, number 1111579.
                 </p>
                 <p>
-                  Rainbow House Kenya are the reason we can work in Gede at all. Communities in Gede
+                  Rainbow House Kenya are the reason there is any work in Gede at all. Communities in Gede
                   and Watamu are at the heart of the work. By collaborating with local leaders and
                   employing local staff, we aim to keep the programmes community-led and reaching
                   those who need them most.
@@ -247,7 +247,7 @@ export default function Gede() {
       </Section>
 
       {/* Closing band */}
-      <Section className="bg-primary">
+      <Section className="bg-growth">
         <Container>
           <div className="max-w-prose">
             <h2 className="font-display text-display-sm font-semibold text-paper sm:text-display">
@@ -261,14 +261,14 @@ export default function Gede() {
               <Button
                 to="/sponsor"
                 variant="ghost"
-                className="border-paper/70 bg-paper text-primary hover:border-paper hover:bg-sand-light focus-visible:ring-paper focus-visible:ring-offset-primary"
+                className="border-paper/70 bg-paper text-growth hover:border-paper hover:bg-sand focus-visible:ring-paper focus-visible:ring-offset-growth"
               >
                 Sponsor a child
               </Button>
               <Button
                 to="/blog"
                 variant="ghost"
-                className="border-paper/60 text-paper hover:border-paper hover:bg-paper/10 focus-visible:ring-paper focus-visible:ring-offset-primary"
+                className="border-paper/60 text-paper hover:border-paper hover:bg-paper/10 focus-visible:ring-paper focus-visible:ring-offset-growth"
               >
                 Read the latest post
               </Button>

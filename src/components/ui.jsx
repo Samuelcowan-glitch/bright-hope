@@ -22,7 +22,7 @@ export function Container({ className = '', children }) {
 
 export function Eyebrow({ children }) {
   return (
-    <p className="mb-4 font-body text-eyebrow font-semibold uppercase text-accent-ink">
+    <p className="mb-4 font-body text-eyebrow font-semibold uppercase text-growth">
       {children}
     </p>
   )
@@ -51,7 +51,7 @@ const BUTTON_BASE =
   'focus-visible:ring-offset-2 focus-visible:ring-offset-paper'
 
 const BUTTON_VARIANTS = {
-  primary: 'bg-primary text-paper hover:bg-primary-dark',
+  primary: 'bg-accent text-ink hover:bg-accent-dark',
   ghost: 'border border-primary/35 bg-transparent text-primary hover:border-primary hover:bg-primary/5',
 }
 

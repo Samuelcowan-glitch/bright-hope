@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
                 the trustee responsible for data protection and your message will be passed on.
               </p>
               <p className={BODY}>
-                Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                Bright Hope Education Project is a project of Rainbow House Kenya, a
                 charity registered in England and Wales, number 1111579.
               </p>
             </section>
@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
               <p className={BODY}>
                 Our trustees and the small number of people who administer sponsorship can see
                 enquiries. Where it is necessary to arrange a particular child&rsquo;s sponsorship,
-                we share what is needed with our partner Rainbow House Kenya. We do not sell, rent
+                we share what is needed with Rainbow House Kenya, whose project this is. We do not sell, rent
                 or trade your details to anybody.
               </p>
             </section>
@@ -219,11 +219,11 @@ export default function PrivacyPolicy() {
 
             <p className="mt-10 font-body text-sm leading-relaxed text-muted">
               Photography: every photograph on this site was taken in Gede and Watamu and supplied
-              by our partner Rainbow House Kenya. No stock or generated image is captioned as a real
+              by Rainbow House Kenya. No stock or generated image is captioned as a real
               place, and no child is named beside a photograph.
             </p>
             <p className="mt-4 font-body text-sm leading-relaxed text-muted">
-              Bright Hope Education Project works in partnership with Rainbow House Kenya, a charity
+              Bright Hope Education Project is a project of Rainbow House Kenya, a charity
               registered in England and Wales, number 1111579. You can read more on our{' '}
               <Link to="/about" className={LINK}>
                 about page

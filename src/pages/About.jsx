@@ -26,7 +26,7 @@ export default function About() {
     <Layout>
       <SEO
         title="About us | Funding education in Gede and Watamu, Kenya | Bright Hope Education Project"
-        description="Who we are: a small Christian group working in partnership with Rainbow House Kenya in Gede and Watamu, how the work is registered, and how the money is handled."
+        description="Who we are: a project of Rainbow House Kenya in Gede and Watamu, run by a small Christian group in Surrey, how the work is registered, and how the money is handled."
       />
 
       {/* Hero */}
@@ -39,8 +39,8 @@ export default function About() {
                 Who we are
               </h1>
               <Lead>
-                A small Christian group in Surrey, a Kenyan partner who has been in Gede far longer
-                than we have, and twenty-nine children whose school costs are paid each month by
+                A small Christian group in Surrey, the Rainbow House Kenya team who have been in Gede
+                far longer than we have, and twenty-nine children whose school costs are paid each month by
                 somebody in Britain.
               </Lead>
               <div className="mt-9 flex flex-wrap gap-3">
@@ -59,7 +59,7 @@ export default function About() {
                 loading="eager"
               />
               <p className="mt-3 font-body text-sm text-muted">
-                Photograph supplied by our partner, Rainbow House Kenya.
+                Photograph supplied by Rainbow House Kenya.
               </p>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function About() {
               <div className="mt-6 max-w-prose space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
                 <p>
                   We do not build schools and we do not run them. We pay for children to attend the
-                  schools that are already there, and we rely on our partner in Gede to tell us
+                  schools that are already there, and we rely on the Rainbow House Kenya team in Gede to tell us
                   whether it is working.
                 </p>
                 <p>
@@ -107,7 +107,7 @@ export default function About() {
                 loading="lazy"
               />
               <p className="mt-3 font-body text-sm text-muted">
-                Photograph supplied by our partner, Rainbow House Kenya.
+                Photograph supplied by Rainbow House Kenya.
               </p>
             </div>
           </div>
@@ -119,13 +119,13 @@ export default function About() {
         <Container>
           <div className="max-w-prose">
             <Eyebrow>How this work is registered</Eyebrow>
-            <H2>Our partner, Rainbow House Kenya</H2>
+            <H2>A project of Rainbow House Kenya</H2>
 
             <Card className="mt-8 border-primary/25 bg-surface">
               <div className="flex gap-4">
                 <Landmark aria-hidden="true" className="mt-1 h-6 w-6 shrink-0 text-primary" />
                 <p className="font-body text-base font-semibold leading-relaxed text-ink sm:text-lg sm:leading-relaxed">
-                  Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                  Bright Hope Education Project is a project of Rainbow House Kenya, a
                   charity registered in England and Wales, number 1111579.
                 </p>
               </div>
@@ -141,14 +141,14 @@ export default function About() {
                 Rainbow House Kenya is the reason there is any work in Gede at all. They hold the
                 ABBAFATHERLAND property in trust, they run the community hub, the library and the
                 education resource centre on it, and they employ the local people who know the
-                families and the schools. Bright Hope Education Project is the name this education
-                sponsorship is run under in Britain: we find sponsors, we handle the money that comes
+                families and the schools. Bright Hope Education Project is their education
+                sponsorship project, run from Britain: we find sponsors, we handle the money that comes
                 from them, and we pass on what comes back.
               </p>
               <p>
-                The relationship runs one way on money and both ways on decisions. We fund the school
-                costs; Rainbow House Kenya tell us what is actually needed, and which child is next.
-                Our Instagram and Facebook accounts are run jointly with them for the same reason.
+                Within Rainbow House Kenya the work divides simply. Bright Hope funds the school
+                costs; the team in Gede tell us what is actually needed, and which child is next.
+                That is also why our Instagram and Facebook are Rainbow House Kenya&rsquo;s accounts.
               </p>
               <p>
                 You can check the registration yourself. Search the Charity Commission register for

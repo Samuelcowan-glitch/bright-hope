@@ -51,7 +51,7 @@ export const posts = [
 
       '## Why we are there at all',
       'This is Christian work, and the registered purposes it is pursued under are to relieve need and advance the education of children in Kenya, and to advance the teaching of the Christian faith. That is on the register and we are not going to hide it in a footer.',
-      'In practice it means the work runs through people who were in Gede before us and will be there after us. Our partner Rainbow House Kenya knows which family is struggling and which child stopped turning up in week three. You do not have to share the faith to see why that is the only way work this small can be done at this distance.',
+      'In practice it means the work runs through people who were in Gede before us and will be there after us. Rainbow House Kenya, whose project this is, knows which family is struggling and which child stopped turning up in week three. You do not have to share the faith to see why that is the only way work this small can be done at this distance.',
       'Children are supported because of need, whatever their family believes. Sponsors come to us with every kind of belief and none, and are equally welcome.',
 
       '## One more thing about photographs',

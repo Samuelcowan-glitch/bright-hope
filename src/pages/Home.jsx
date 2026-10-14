@@ -21,8 +21,8 @@ gsap.registerPlugin(ScrollTrigger)
 /* The one legal sentence. It appears verbatim wherever the relationship is
    stated, and nothing stronger is written anywhere on this page: the
    registration belongs to Rainbow House Kenya, not to Bright Hope. */
-const PARTNERSHIP =
-  'Bright Hope Education Project works in partnership with Rainbow House Kenya, ' +
+const PROJECT_OF =
+  'Bright Hope Education Project is a project of Rainbow House Kenya, ' +
   'a charity registered in England and Wales, number 1111579.'
 
 /* The verified basket. Both stages are funded the same way; only the monthly
@@ -154,7 +154,7 @@ export default function Home() {
 
               <Lead>
                 Bright Hope Education Project funds school places for children in Gede and Watamu, on
-                the Kenyan coast. {PARTNERSHIP}
+                the Kenyan coast. {PROJECT_OF}
               </Lead>
 
               <p className="mt-6 max-w-prose rounded-2xl border border-divider bg-surface px-5 py-4 font-body text-base font-semibold leading-relaxed text-ink sm:text-lg">
@@ -425,8 +425,8 @@ export default function Home() {
             </p>
 
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
-              In practice we work through people who are already there. Our partner Rainbow House
-              Kenya knows the families in Gede, and knows when a child has stopped turning up at
+              In practice we work through people who are already there. Rainbow House Kenya, whose
+              project this is, knows the families in Gede, and knows when a child has stopped turning up at
               school.
             </p>
 
@@ -578,7 +578,7 @@ export default function Home() {
               </Button>
             </div>
 
-            <p className="mt-10 font-body text-base leading-relaxed text-muted">{PARTNERSHIP}</p>
+            <p className="mt-10 font-body text-base leading-relaxed text-muted">{PROJECT_OF}</p>
           </div>
         </Container>
       </Section>

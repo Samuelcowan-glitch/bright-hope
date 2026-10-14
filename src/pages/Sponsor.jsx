@@ -335,7 +335,7 @@ export default function Sponsor() {
                 loading="eager"
               />
               <p className="mt-3 font-body text-sm text-muted">
-                Gede, Kilifi County — photographed by our partner Rainbow House Kenya.
+                Gede, Kilifi County — photographed by Rainbow House Kenya.
               </p>
             </div>
           </div>
@@ -483,7 +483,7 @@ export default function Sponsor() {
               <li key={title}>
                 <Card className="h-full">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-primary text-paper">
+                    <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-growth text-paper">
                       <span className="font-display text-lg font-semibold">{index + 1}</span>
                     </span>
                     <Icon aria-hidden="true" className="h-5 w-5 text-accent-ink" />
@@ -587,7 +587,7 @@ export default function Sponsor() {
                   loading="lazy"
                 />
                 <figcaption className="mt-3 font-body text-sm text-muted">
-                  Photograph supplied by our partner Rainbow House Kenya. No child on this site is
+                  Photograph supplied by Rainbow House Kenya. No child on this site is
                   named beside a photograph.
                 </figcaption>
               </figure>
@@ -903,7 +903,7 @@ export default function Sponsor() {
                   <button
                     type="submit"
                     disabled={sending}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 font-body text-base font-semibold leading-none text-paper transition-colors duration-200 hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper disabled:opacity-70"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 font-body text-base font-semibold leading-none text-ink transition-colors duration-200 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper disabled:opacity-70"
                   >
                     {sending ? 'Sending…' : 'Send message'}
                   </button>
@@ -981,7 +981,7 @@ export default function Sponsor() {
                   Who you are sending it to
                 </h3>
                 <p className="mt-4 font-body text-base leading-relaxed text-ink-soft">
-                  Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                  Bright Hope Education Project is a project of Rainbow House Kenya, a
                   charity registered in England and Wales, number 1111579.
                 </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-muted">

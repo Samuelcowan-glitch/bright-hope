@@ -353,7 +353,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={sending}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 font-body text-base font-semibold leading-none text-paper transition-colors duration-200 hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper disabled:opacity-70"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 font-body text-base font-semibold leading-none text-ink transition-colors duration-200 hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper disabled:opacity-70"
                   >
                     {sending ? 'Sending…' : 'Send Message'}
                   </button>
@@ -419,7 +419,7 @@ export default function Contact() {
                     <li key={step} className="flex gap-4">
                       <span
                         aria-hidden="true"
-                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary font-display text-base font-semibold text-paper"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-growth font-display text-base font-semibold text-paper"
                       >
                         {index + 1}
                       </span>
@@ -428,7 +428,7 @@ export default function Contact() {
                   ))}
                 </ol>
                 <p className="mt-6 font-body text-base leading-relaxed text-ink-soft">
-                  Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                  Bright Hope Education Project is a project of Rainbow House Kenya, a
                   charity registered in England and Wales, number 1111579.
                 </p>
               </Card>

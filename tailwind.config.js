@@ -5,7 +5,8 @@
    gold and the teal of the book's swoosh. The logo shades are bright, so they
    decorate (rules, figures, hovers, backgrounds); where a colour carries
    words it uses a deeper shade of the same hue. Contrast on paper: ink 14.5:1,
-   primary 5.4:1, growth 5.1:1, accent-ink 5.1:1, coast 5.7:1, muted 5.3:1. */
+   primary 5.4:1, growth 5.1:1 (4.6:1 on the green wash), navy on the
+   orange button 5.9:1, accent-ink 5.1:1, coast 5.7:1, muted 5.3:1. */
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -16,8 +17,9 @@ export default {
         paper: '#F7FBFD',
         background: '#F7FBFD',
         surface: '#FFFFFF',
-        // Sky wash — section backgrounds (token names kept so pages need no edits).
-        sand: '#DCEEF8',
+        // Section washes: `sand` is a soft leaf green, `sand-light` a sky tint, so
+        // alternate sections pick up both logo colours. Names kept so pages need no edits.
+        sand: '#E8F4DA',
         'sand-light': '#EDF6FB',
         // Ink — body text. Deep navy from the book's spine, never #000.
         ink: '#14283A',

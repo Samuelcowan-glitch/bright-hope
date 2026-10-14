@@ -59,7 +59,7 @@ export default function ThankYou() {
                   <li key={step} className="flex gap-4">
                     <span
                       aria-hidden="true"
-                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-display text-base font-semibold text-paper"
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-growth font-display text-base font-semibold text-paper"
                     >
                       {index + 1}
                     </span>
@@ -94,7 +94,7 @@ export default function ThankYou() {
                         Read about Gede and ABBAFATHERLAND
                       </Button>
                       <p className="mt-3 font-body text-base leading-relaxed text-ink-soft">
-                        The community hub, the library and the hydroponics on the land our partner
+                        The community hub, the library and the hydroponics on the land
                         Rainbow House Kenya holds in trust.
                       </p>
                     </div>
@@ -121,11 +121,11 @@ export default function ThankYou() {
                   loading="lazy"
                 />
                 <p className="mt-3 font-body text-sm text-muted">
-                  Gede, Kilifi County. Photograph supplied by our partner Rainbow House Kenya.
+                  Gede, Kilifi County. Photograph supplied by Rainbow House Kenya.
                 </p>
 
                 <p className="mt-6 font-body text-sm leading-relaxed text-muted">
-                  Bright Hope Education Project works in partnership with Rainbow House Kenya, a
+                  Bright Hope Education Project is a project of Rainbow House Kenya, a
                   charity registered in England and Wales, number 1111579.
                 </p>
               </Card>
