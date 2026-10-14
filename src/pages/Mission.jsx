@@ -81,8 +81,7 @@ export default function Mission() {
               Our Mission, Vision and Goals
             </h1>
             <Lead>
-              Bright Hope Education Project is a project of Rainbow House Kenya, a charity
-              registered in England and Wales, number 1111579. What follows is what we are trying to
+              Bright Hope Education Project is a project of Rainbow House Kenya. What follows is what we are trying to
               do in Gede and Watamu, and the purposes we are registered to pursue.
             </Lead>
           </div>

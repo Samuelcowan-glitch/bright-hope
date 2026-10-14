@@ -56,8 +56,7 @@ export default function PrivacyPolicy() {
                 the trustee responsible for data protection and your message will be passed on.
               </p>
               <p className={BODY}>
-                Bright Hope Education Project is a project of Rainbow House Kenya, a
-                charity registered in England and Wales, number 1111579.
+                Bright Hope Education Project is a project of Rainbow House Kenya.
               </p>
             </section>
 
@@ -223,8 +222,7 @@ export default function PrivacyPolicy() {
               place, and no child is named beside a photograph.
             </p>
             <p className="mt-4 font-body text-sm leading-relaxed text-muted">
-              Bright Hope Education Project is a project of Rainbow House Kenya, a charity
-              registered in England and Wales, number 1111579. You can read more on our{' '}
+              Bright Hope Education Project is a project of Rainbow House Kenya. You can read more on our{' '}
               <Link to="/about" className={LINK}>
                 about page
               </Link>

@@ -18,12 +18,9 @@ import { Section, Container, Eyebrow, H2, Lead, Button, Stat, Card } from '../co
 
 gsap.registerPlugin(ScrollTrigger)
 
-/* The one legal sentence. It appears verbatim wherever the relationship is
-   stated, and nothing stronger is written anywhere on this page: the
-   registration belongs to Rainbow House Kenya, not to Bright Hope. */
-const PROJECT_OF =
-  'Bright Hope Education Project is a project of Rainbow House Kenya, ' +
-  'a charity registered in England and Wales, number 1111579.'
+/* How the relationship is stated wherever it comes up. The charity number
+   itself appears only in the footer. */
+const PROJECT_OF = 'Bright Hope Education Project is a project of Rainbow House Kenya.'
 
 /* The verified basket. Both stages are funded the same way; only the monthly
    figure differs, so the two cards list the same six things. */
@@ -269,7 +266,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-8 pt-2 sm:mt-auto">
-                <Button to="/sponsor?place=primary" className="w-full">
+                <Button to="/sponsor?place=primary" className="min-h-[3.75rem] w-full text-center leading-snug">
                   Sponsor a primary school child
                 </Button>
               </div>
@@ -293,7 +290,7 @@ export default function Home() {
                 do next.
               </p>
               <div className="mt-8 pt-2 sm:mt-auto">
-                <Button to="/sponsor?place=secondary" className="w-full">
+                <Button to="/sponsor?place=secondary" className="min-h-[3.75rem] w-full text-center leading-snug">
                   Sponsor a secondary school child
                 </Button>
               </div>
@@ -311,7 +308,7 @@ export default function Home() {
                 needs.
               </p>
               <div className="mt-8 pt-2 sm:mt-auto">
-                <Button to="/contact" variant="ghost" className="w-full">
+                <Button to="/contact" className="min-h-[3.75rem] w-full text-center leading-snug">
                   Ask about vocational and higher education
                 </Button>
               </div>

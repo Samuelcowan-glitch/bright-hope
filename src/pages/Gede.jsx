@@ -191,8 +191,7 @@ export default function Gede() {
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p className="font-semibold text-ink">
-                  Bright Hope Education Project is a project of Rainbow House Kenya, a
-                  charity registered in England and Wales, number 1111579.
+                  Bright Hope Education Project is a project of Rainbow House Kenya.
                 </p>
                 <p>
                   Rainbow House Kenya are the reason there is any work in Gede at all. Communities in Gede

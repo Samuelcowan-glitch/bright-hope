@@ -125,8 +125,7 @@ export default function ThankYou() {
                 </p>
 
                 <p className="mt-6 font-body text-sm leading-relaxed text-muted">
-                  Bright Hope Education Project is a project of Rainbow House Kenya, a
-                  charity registered in England and Wales, number 1111579.
+                  Bright Hope Education Project is a project of Rainbow House Kenya.
                 </p>
               </Card>
             </aside>

@@ -16,10 +16,6 @@ const COVERS = [
   'Exam entry',
 ]
 
-/* The public register is linked rather than quoted, so that anyone can check
-   the registration for themselves. Linking the search page rather than a
-   deep link keeps the link alive if the register’s URLs change. */
-const REGISTER_URL = 'https://register-of-charities.charitycommission.gov.uk/charity-search'
 
 export default function About() {
   return (
@@ -118,25 +114,19 @@ export default function About() {
       <Section className="bg-sand">
         <Container>
           <div className="max-w-prose">
-            <Eyebrow>How this work is registered</Eyebrow>
+            <Eyebrow>Who we are part of</Eyebrow>
             <H2>A project of Rainbow House Kenya</H2>
 
             <Card className="mt-8 border-primary/25 bg-surface">
               <div className="flex gap-4">
                 <Landmark aria-hidden="true" className="mt-1 h-6 w-6 shrink-0 text-primary" />
                 <p className="font-body text-base font-semibold leading-relaxed text-ink sm:text-lg sm:leading-relaxed">
-                  Bright Hope Education Project is a project of Rainbow House Kenya, a
-                  charity registered in England and Wales, number 1111579.
+                  Bright Hope Education Project is a project of Rainbow House Kenya.
                 </p>
               </div>
             </Card>
 
             <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
-              <p>
-                That sentence is worth reading slowly, because it is the one most charity websites
-                blur. The registration number 1111579 belongs to Rainbow House Kenya. It is their
-                entry on the register, and it is not a number we use about ourselves.
-              </p>
               <p>
                 Rainbow House Kenya is the reason there is any work in Gede at all. They hold the
                 ABBAFATHERLAND property in trust, they run the community hub, the library and the
@@ -150,21 +140,6 @@ export default function About() {
                 costs; the team in Gede tell us what is actually needed, and which child is next.
                 That is also why our Instagram and Facebook are Rainbow House Kenya&rsquo;s accounts.
               </p>
-              <p>
-                You can check the registration yourself. Search the Charity Commission register for
-                number 1111579 and you will find Rainbow House Kenya.
-              </p>
-            </div>
-
-            <div className="mt-8">
-              <Button
-                href={REGISTER_URL}
-                variant="ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Check 1111579 on the Charity Commission register
-              </Button>
             </div>
           </div>
         </Container>

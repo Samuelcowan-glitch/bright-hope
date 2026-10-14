@@ -428,8 +428,7 @@ export default function Contact() {
                   ))}
                 </ol>
                 <p className="mt-6 font-body text-base leading-relaxed text-ink-soft">
-                  Bright Hope Education Project is a project of Rainbow House Kenya, a
-                  charity registered in England and Wales, number 1111579.
+                  Bright Hope Education Project is a project of Rainbow House Kenya.
                 </p>
               </Card>
             </aside>
