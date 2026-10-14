@@ -7,7 +7,6 @@ import {
   GraduationCap,
   School,
   Shirt,
-  Stethoscope,
   Utensils,
 } from 'lucide-react'
 
@@ -20,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 /* How the relationship is stated wherever it comes up. The charity number
    itself appears only in the footer. */
-const PROJECT_OF = 'Bright Hope Education Project is a project of Rainbow House Kenya.'
+const PROJECT_OF = 'Bright Hope Education is a project of Rainbow House Kenya.'
 
 /* The verified basket. Both stages are funded the same way; only the monthly
    figure differs, so the two cards list the same six things. */
@@ -29,7 +28,6 @@ const COVERED = [
   { Icon: Shirt, label: 'Uniform and shoes' },
   { Icon: BookOpen, label: 'Books and materials' },
   { Icon: Utensils, label: 'A daily meal' },
-  { Icon: Stethoscope, label: 'Basic healthcare' },
   { Icon: GraduationCap, label: 'Exam entry' },
 ]
 
@@ -77,7 +75,7 @@ const FAQS = [
   {
     question: 'Is there a card payment option?',
     answer:
-      'Not at the moment. Every sponsorship here starts with the enquiry form and continues as a standing order from your own bank. There is no payment processor in between, which is why all funding for the children goes directly for the children.',
+      'Not at the moment. Every sponsorship here starts with the enquiry form and continues as a standing order from your own bank. There is no payment processor in between, which is why 100% of sponsorship money goes directly to the sponsored child.',
   },
   {
     question: 'Can I choose a child?',
@@ -97,7 +95,7 @@ const FAQS = [
   {
     question: 'Where does my money actually go?',
     answer:
-      'School fees, uniform and shoes, books and materials, a daily meal, basic healthcare and exam entry. All funding for the children goes directly for the children.',
+      'School fees, uniform and shoes, books and materials, a daily meal, exam entry and, for secondary students, the bus to school. 100% of sponsorship money goes directly to the sponsored child. Sponsorship does not cover basic health care.',
   },
 ]
 
@@ -134,8 +132,8 @@ export default function Home() {
   return (
     <Layout>
       <SEO
-        title="Bright Hope Education Project | Sponsoring children's education in Gede and Watamu, Kenya"
-        description="Funding school places for 29 children in Gede and Watamu, Kilifi County, Kenya. All funding for the children goes directly for the children."
+        title="Bright Hope Education | Sponsoring children's education in Gede, Watamu, Kenya"
+        description="Funding school places for 44 students from 33 families in Gede, Watamu, Kilifi County, Kenya. 100% of sponsorship goes to the sponsored child."
       />
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
@@ -143,14 +141,14 @@ export default function Home() {
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
             <div className="lg:col-span-6">
-              <Eyebrow>Gede and Watamu · Kilifi County · Kenya</Eyebrow>
+              <Eyebrow>Gede, Watamu · Kilifi County · Kenya</Eyebrow>
 
               <h1 className="max-w-prose font-display text-display font-semibold leading-[1.08] tracking-tight text-primary sm:text-display-lg lg:text-display-xl">
-                Twenty-nine children in school
+                Forty-four students in school
               </h1>
 
               <Lead>
-                Bright Hope Education Project funds school places for children in Gede and Watamu, on
+                Bright Hope Education funds school places for children in Gede, Watamu, on
                 the Kenyan coast. {PROJECT_OF}
               </Lead>
 
@@ -187,12 +185,12 @@ export default function Home() {
 
           <div ref={statsRef} className="mt-10 grid gap-10 sm:grid-cols-3 sm:gap-8">
             <div data-stat>
-              <Stat figure="29" label="Children sponsored today, as at October 2026" />
+              <Stat figure="44" label="Students sponsored, from 33 families, as at October 2026" />
             </div>
             <div data-stat>
               <Stat
                 figure="100%"
-                label="All funding for the children goes directly for the children"
+                label="Of sponsorship money goes directly to your sponsored child"
               />
             </div>
             <div data-stat>
@@ -205,6 +203,11 @@ export default function Home() {
             out of a gift on the way to a school in Kilifi County. Sponsorship starts with a message
             and continues as a standing order from your own bank.
           </p>
+
+          <p className="mt-5 max-w-prose font-body text-lg leading-relaxed text-ink-soft">
+            The charity does have running costs of its own: the site, security and maintenance
+            come to about £400 a month. None of that is taken from sponsorship.
+          </p>
         </Container>
       </Section>
 
@@ -215,9 +218,9 @@ export default function Home() {
             <H2>Why we put the money into school fees</H2>
 
             <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
-              Across Gede and Watamu there are children out of the classroom who have every bit of
+              Across Gede, Watamu, there are children out of the classroom who have every bit of
               the ability to be in it. What stands in the way is the cost of a school place: fees,
-              uniform, shoes, textbooks, exam entry, and the bus to the secondary school in Watamu.
+              uniform, shoes, textbooks, exam entry, and the bus to secondary school, whether that is in Watamu, Kilifi, Malindi or further afield in Kenya.
             </p>
 
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
@@ -359,6 +362,10 @@ export default function Home() {
               child&rsquo;s circumstances change, you hear it from us rather than reading it later.
             </p>
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
+              You can write to your child too. When one of our team visits Kenya from the UK, they
+              take sponsors&rsquo; letters with them and hand them over in person.
+            </p>
+            <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
               We write to sponsors because the relationship goes both ways.
             </p>
           </div>
@@ -423,7 +430,7 @@ export default function Home() {
 
             <p className="mt-5 font-body text-lg leading-relaxed text-ink-soft">
               Support is offered on the basis of need, whatever a family&rsquo;s faith. Sponsors
-              come to us with every kind of belief and none, and are equally welcome.
+              come to us with every kind of belief and none, and all are equally welcome.
             </p>
 
             <p className="mt-8">
@@ -554,7 +561,7 @@ export default function Home() {
             <H2>Join our mission</H2>
 
             <p className="mt-6 font-body text-lg leading-relaxed text-ink-soft">
-              Your donations help us keep children in Gede and Watamu in school. Every contribution,
+              Your donations help us keep children in Gede, Watamu, in school. Every contribution,
               whatever the size, is welcome.
             </p>
 

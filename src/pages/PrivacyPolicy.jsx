@@ -20,8 +20,8 @@ export default function PrivacyPolicy() {
   return (
     <Layout>
       <SEO
-        title="Privacy policy | Bright Hope Education Project"
-        description="How Bright Hope Education Project handles the personal information you send us through this website."
+        title="Privacy policy | Bright Hope Education"
+        description="How Bright Hope Education handles the personal information you send us through this website."
       />
 
       {/* Header */}
@@ -50,13 +50,13 @@ export default function PrivacyPolicy() {
                 Who is responsible for your information
               </h2>
               <p className={BODY}>
-                The data controller for enquiries sent through this website is Bright Hope Education
-                Project, Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR, telephone
+                The data controller for enquiries sent through this website is Bright Hope Education,
+                Priors Glade, Priorswood, Compton, Guildford, Surrey, GU3 1DR, telephone
                 07551909493. If you would rather write to a person than to an organisation, ask for
                 the trustee responsible for data protection and your message will be passed on.
               </p>
               <p className={BODY}>
-                Bright Hope Education Project is a project of Rainbow House Kenya.
+                Bright Hope Education is a project of Rainbow House Kenya.
               </p>
             </section>
 
@@ -197,7 +197,7 @@ export default function PrivacyPolicy() {
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent-ink" aria-hidden="true" />
                   <span>
-                    Bright Hope Education Project, Priors Glade, Priorswood, Compton, Guildford,
+                    Bright Hope Education, Priors Glade, Priorswood, Compton, Guildford,
                     Surrey, GU3 1DR
                   </span>
                 </li>
@@ -217,12 +217,12 @@ export default function PrivacyPolicy() {
             </Card>
 
             <p className="mt-10 font-body text-sm leading-relaxed text-muted">
-              Photography: the photographs of Gede and Watamu on this site were supplied by
+              Photography: the photographs of Gede, Watamu on this site were supplied by
               Rainbow House Kenya. No stock or generated image is captioned as a real
               place, and no child is named beside a photograph.
             </p>
             <p className="mt-4 font-body text-sm leading-relaxed text-muted">
-              Bright Hope Education Project is a project of Rainbow House Kenya. You can read more on our{' '}
+              Bright Hope Education is a project of Rainbow House Kenya. You can read more on our{' '}
               <Link to="/about" className={LINK}>
                 about page
               </Link>

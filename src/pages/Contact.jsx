@@ -279,8 +279,8 @@ export default function Contact() {
   return (
     <Layout>
       <SEO
-        title="Contact us | Bright Hope Education Project"
-        description="Sponsor a child, or ask anything about our work in Gede and Watamu, Kenya. Send us a message or ring the office. We reply to every enquiry."
+        title="Contact us | Bright Hope Education"
+        description="Sponsor a child, or ask anything about our work in Gede, Watamu, Kenya. Send us a message or ring the office. We reply to every enquiry."
       />
 
       <Section className="bg-sand-light pt-10 pb-8 sm:pt-16 sm:pb-12 lg:pt-28 lg:pb-16">
@@ -499,7 +499,7 @@ export default function Contact() {
                       className="mt-1 h-5 w-5 shrink-0 accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
                     />
                     <label htmlFor="consent" className="cursor-pointer font-body text-base leading-relaxed text-ink-soft">
-                      I am happy for Bright Hope Education Project to contact me about this enquiry.
+                      I am happy for Bright Hope Education to contact me about this enquiry.
                     </label>
                   </div>
                   <p id="consent-note" className="mt-3 font-body text-sm leading-relaxed text-muted">
@@ -663,7 +663,7 @@ export default function Contact() {
                   Who you are sending it to
                 </h2>
                 <p className="mt-4 font-body text-base leading-relaxed text-ink-soft">
-                  Bright Hope Education Project is a project of Rainbow House Kenya.
+                  Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-muted">
                   If something about your enquiry is not handled as it should be, tell us: ring{' '}

@@ -35,12 +35,12 @@ export default function Nav() {
       <div className="mx-auto flex w-full max-w-container items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           to="/"
-          aria-label="Bright Hope Education Project — home"
+          aria-label="Bright Hope Education — home"
           className="shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
         >
           <img
             src={asset('/img/logo-bright-hope.png')}
-            alt="Bright Hope Education Project"
+            alt="Bright Hope Education"
             className="h-12 w-auto sm:h-14"
             width="220"
             height="56"

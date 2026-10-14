@@ -18,7 +18,7 @@ export const posts = [
     byline: 'From the Team',
     readTime: '6 min read',
     metaTitle:
-      'What a children’s home became: Gede, ABBAFATHERLAND and the case for family-based care | Bright Hope Education Project',
+      'What a children’s home became: Gede, ABBAFATHERLAND and the case for family-based care | Bright Hope Education',
     metaDescription:
       'The Rainbow House children’s home in Gede is now a community hub, library and education resource centre, and the children live with families. Why that change was the right one.',
     standfirst:
@@ -45,14 +45,14 @@ export const posts = [
       'A compound that used to run on donations now partly pays for itself and teaches a trade while it does. That is what sustainability looks like in practice.',
 
       '## What this means for a sponsor',
-      'Twenty-nine children are sponsored through Bright Hope today. Every one of them lives with family or foster family. Every one of them is in school through the work of their family, their teachers and the Rainbow House Kenya team, with a sponsor in Britain whose standing order covers the costs.',
-      '£15 a month covers a primary school child’s school costs, and £35 a month covers a secondary school student’s. In both cases the sponsorship goes to school fees, uniform and shoes, books and materials, a daily meal, basic healthcare and exam entry — secondary school simply costs more, because of travel and the national exams at the end of it. For students going on to vocational training, college or university, there is no fixed price: courses differ, so we will tell you what a particular student needs and you can decide.',
-      'All funding for the children goes directly for the children. There is no payment processor taking a cut, because there is no card payment button on our website. Sponsorship starts with a message and a conversation, and continues as a standing order from your own bank. It is old-fashioned. It is also why the figure is 100%.',
+      'Forty-four students, from 33 families, are sponsored through Bright Hope today. Every one of them lives with family or foster family. Every one of them is in school through the work of their family, their teachers and the Rainbow House Kenya team, with a sponsor in Britain whose standing order covers the costs.',
+      '£15 a month covers a primary school child’s school costs, and £35 a month covers a secondary school student’s. In both cases the sponsorship goes to school fees, uniform and shoes, books and materials, a daily meal and exam entry — secondary school simply costs more, because of travel and the national exams at the end of it. For students going on to vocational training, college or university, there is no fixed price: courses differ, so we will tell you what a particular student needs and you can decide.',
+      '100% of sponsorship money goes directly to the sponsored child. There is no payment processor taking a cut, because there is no card payment button on our website. Sponsorship starts with a message and a conversation, and continues as a standing order from your own bank. It is old-fashioned. It is also why the figure is 100%.',
 
       '## Why we are there at all',
       'This is Christian work, and the registered purposes it is pursued under are to relieve need and advance the education of children in Kenya, and to advance the teaching of the Christian faith. That is on the register and we are not going to hide it in a footer.',
       'In practice it means the work runs through people who were in Gede before us and will be there after us. Rainbow House Kenya, whose project this is, knows the families and the schools, and which child stopped turning up in week three. You do not have to share the faith to see why that is the only way work this small can be done at this distance.',
-      'Children are supported because of need, whatever their family believes. Sponsors come to us with every kind of belief and none, and are equally welcome.',
+      'Children are supported because of need, whatever their family believes. Sponsors come to us with every kind of belief and none, and all are equally welcome.',
 
       '## One more thing about photographs',
       'You will notice that this post has no photograph of a child’s face next to a child’s name. That is deliberate and permanent. The children we fund are children, living in their own community, and their circumstances are not our marketing. Sponsors receive letters and cards from the child they sponsor, privately, as they should.',

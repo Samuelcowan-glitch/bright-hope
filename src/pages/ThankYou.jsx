@@ -29,7 +29,7 @@ export default function ThankYou() {
   return (
     <Layout>
       <SEO
-        title="Thank you | Bright Hope Education Project"
+        title="Thank you | Bright Hope Education"
         description="Your message has reached us. We will reply shortly."
       />
 
@@ -125,7 +125,7 @@ export default function ThankYou() {
                 </p>
 
                 <p className="mt-6 font-body text-sm leading-relaxed text-muted">
-                  Bright Hope Education Project is a project of Rainbow House Kenya.
+                  Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
               </Card>
             </aside>

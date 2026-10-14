@@ -13,8 +13,8 @@ export default function Gede() {
   return (
     <Layout>
       <SEO
-        title="Gede and Watamu, Kilifi County | Where we work | Bright Hope Education Project"
-        description="Gede and Watamu in Kilifi County, Kenya: the schools, the families, the ABBAFATHERLAND community hub and library, and Rainbow House Kenya, whose project we are."
+        title="Gede, Watamu, Kilifi County | Where we work | Bright Hope Education"
+        description="Gede, Watamu, in Kilifi County, Kenya: the schools, the families, the ABBAFATHERLAND community hub and library, and Rainbow House Kenya, whose project we are."
       />
 
       {/* Hero */}
@@ -24,12 +24,11 @@ export default function Gede() {
             <div className="lg:col-span-6">
               <Eyebrow>Where we work</Eyebrow>
               <h1 className="max-w-prose font-display text-display-sm font-semibold text-primary sm:text-display lg:text-display-lg">
-                Gede and Watamu, Kilifi County
+                Gede, Watamu, Kilifi County
               </h1>
               <Lead>
-                Two places on the Kenyan coast, forty minutes inland and ten minutes from the sea.
-                Ruins, farmland, small schools, and the families and teachers who keep children
-                learning.
+                Gede is part of Watamu, a short way inland from the Kenyan coast. Ruins, farmland,
+                small schools, and the families and teachers who keep children learning.
               </Lead>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Button to="/sponsor">Sponsor a child</Button>
@@ -69,29 +68,34 @@ export default function Gede() {
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p>
-                  Gede sits inland of Watamu in Kilifi County, in eastern Kenya. There is tourism
+                  Gede is part of Watamu, in Kilifi County in eastern Kenya. There is tourism
                   money on the coast and very little of it a few miles in. Families work land, fish,
                   trade, and manage. What they struggle to manage is the cost of keeping a child in
                   school year after year: fees, uniform, shoes, books, exam entry, the bus.
                 </p>
                 <p>
-                  Watamu is where some of our students go to secondary school, which is why travel
-                  costs are part of what £35 a month covers for a secondary student. Distance is not
-                  a detail here: getting to school, and to exams, costs money.
+                  Our secondary students go to school wherever they have won a place: in Watamu,
+                  Kilifi, Malindi and other parts of Kenya. That is why the bus is part of what £35 a
+                  month covers for a secondary student. Distance is not a detail here: getting to
+                  school, and to exams, costs money.
+                </p>
+                <p>
+                  The children we support are from Gede itself. We do not take on requests from
+                  Watamu town.
                 </p>
               </div>
 
               <dl className="mt-10 grid gap-8 sm:grid-cols-3">
                 <div>
-                  <dt className="sr-only">Children sponsored</dt>
+                  <dt className="sr-only">Students sponsored</dt>
                   <dd>
-                    <Stat figure="29" label="Children sponsored, as at October 2026" />
+                    <Stat figure="44" label="Students sponsored, from 33 families, as at October 2026" />
                   </dd>
                 </div>
                 <div>
                   <dt className="sr-only">Proportion of a gift that reaches the child</dt>
                   <dd>
-                    <Stat figure="100%" label="Of a gift reaches the child it is given for" />
+                    <Stat figure="100%" label="Of sponsorship money goes directly to the sponsored child" />
                   </dd>
                 </div>
                 <div>
@@ -191,11 +195,11 @@ export default function Gede() {
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p className="font-semibold text-ink">
-                  Bright Hope Education Project is a project of Rainbow House Kenya.
+                  Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
                 <p>
-                  Rainbow House Kenya are the reason this work in Gede exists. Communities in Gede
-                  and Watamu are at the heart of the work. By collaborating with local leaders and
+                  Rainbow House Kenya are the reason this work in Gede exists. The community in Gede
+                  is at the heart of the work. By collaborating with local leaders and
                   employing local staff, we aim to keep the programmes community-led and reaching
                   those who need them most.
                 </p>
@@ -230,7 +234,6 @@ export default function Gede() {
                   'Uniform and shoes',
                   'Books and materials',
                   'A daily meal',
-                  'Basic healthcare',
                   'Exam entry',
                 ].map((item) => (
                   <li key={item} className="flex gap-3">

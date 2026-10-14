@@ -12,7 +12,6 @@ const COVERS = [
   'Uniform and shoes',
   'Books and learning materials',
   'A daily meal at school',
-  'Basic healthcare',
   'Exam entry',
 ]
 
@@ -21,8 +20,8 @@ export default function About() {
   return (
     <Layout>
       <SEO
-        title="About us | Funding education in Gede and Watamu, Kenya | Bright Hope Education Project"
-        description="Who we are: a project of Rainbow House Kenya in Gede and Watamu, run by a small Christian group in Surrey, how the work is registered, and how the money is handled."
+        title="About us | Funding education in Gede, Watamu, Kenya | Bright Hope Education"
+        description="Who we are: a project of Rainbow House Kenya in Gede, Watamu, run by a small Christian group in Surrey, how the work is registered, and how the money is handled."
       />
 
       {/* Hero */}
@@ -36,8 +35,8 @@ export default function About() {
               </h1>
               <Lead>
                 A small Christian group in Surrey and the Rainbow House Kenya team, who have been in Gede
-                far longer than we have, working alongside the families and schools of twenty-nine
-                sponsored children.
+                far longer than we have, working alongside 33 families and the schools of
+                44 sponsored students.
               </Lead>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button to="/sponsor">Sponsor a child</Button>
@@ -69,7 +68,7 @@ export default function About() {
             <div className="lg:col-span-7">
               <H2>What we do</H2>
               <Lead>
-                We fund access to education for children in Gede and Watamu, in Kilifi County on the
+                We fund access to education for children in Gede, Watamu, in Kilifi County on the
                 Kenyan coast, helping families meet the cost of school.
               </Lead>
               <div className="mt-6 max-w-prose space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
@@ -79,7 +78,7 @@ export default function About() {
                   whether it is working.
                 </p>
                 <p>
-                  Twenty-nine children are sponsored today. £15 a month covers a primary school
+                  Forty-four students from 33 families are sponsored today. £15 a month covers a primary school
                   child’s school costs, and £35 a month covers a secondary school student’s. Vocational and higher
                   education is sponsored by arrangement, because a trade course and a degree do not
                   cost the same thing.
@@ -87,7 +86,7 @@ export default function About() {
               </div>
 
               <div className="mt-10 grid gap-8 sm:grid-cols-3">
-                <Stat figure="29" label="Children sponsored, as at October 2026" />
+                <Stat figure="44" label="Students sponsored, from 33 families, as at October 2026" />
                 <Stat figure="£15" label="A month covers a primary school child’s school costs" />
                 <Stat figure="£35" label="A month covers a secondary school student’s school costs" />
               </div>
@@ -121,7 +120,7 @@ export default function About() {
               <div className="flex gap-4">
                 <Landmark aria-hidden="true" className="mt-1 h-6 w-6 shrink-0 text-primary" />
                 <p className="font-body text-base font-semibold leading-relaxed text-ink sm:text-lg sm:leading-relaxed">
-                  Bright Hope Education Project is a project of Rainbow House Kenya.
+                  Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
               </div>
             </Card>
@@ -131,7 +130,7 @@ export default function About() {
                 Rainbow House Kenya is the reason this work in Gede exists. They hold the
                 ABBAFATHERLAND property in trust, they run the community hub, the library and the
                 education resource centre on it, and they employ the local people who know the
-                families and the schools. Bright Hope Education Project is their education
+                families and the schools. Bright Hope Education is their education
                 sponsorship project, run from Britain: we find sponsors, we handle the money that comes
                 from them, and we pass on what comes back.
               </p>
@@ -139,6 +138,11 @@ export default function About() {
                 Within Rainbow House Kenya the work divides simply. Bright Hope funds the school
                 costs; the team in Gede tell us what is actually needed, and which children to support next.
                 That is also why our Instagram and Facebook are Rainbow House Kenya&rsquo;s accounts.
+              </p>
+              <p>
+                On the ground the work is known simply as Bright Hope Education, and the site in
+                Gede as the Centre, or the BHE Centre. We use the name Rainbow House for the site
+                only so that people can find it: it is the name people locally know the place by.
               </p>
             </div>
           </div>
@@ -152,8 +156,7 @@ export default function About() {
             <Eyebrow>Money</Eyebrow>
             <H2>How the money works</H2>
             <Lead>
-              All funding for the children goes directly for the children. 100% of a sponsor’s gift
-              reaches the child it was given for.
+              100% of sponsorship money goes directly to the sponsored child it was given for.
             </Lead>
 
             <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
@@ -170,8 +173,13 @@ export default function About() {
               <p>
                 It also means the gift is restricted to the purpose it was given for. If a
                 sponsorship ends part-way through a year, or a child moves school, the money already
-                given stays with children’s school costs in Gede and Watamu. It is not swept into
+                given stays with children’s school costs in Gede, Watamu. It is not swept into
                 anything else.
+              </p>
+              <p>
+                The charity does have running costs of its own: the site in Gede, its security
+                and its maintenance come to about £400 a month. Those costs are not related to a
+                child’s education, and none of them is taken from sponsorship.
               </p>
             </div>
 
@@ -225,15 +233,16 @@ export default function About() {
               <p>
                 It matters to say what that does and does not mean for your money. A sponsor’s gift
                 pays a child’s school costs – fees, uniform and shoes, books and materials, a daily
-                meal, basic healthcare and exam entry. No part of it is spent on the second purpose.
+                meal, exam entry and, for secondary students, the bus to school. Sponsorship does
+                not cover basic health care. No part of it is spent on the second purpose.
                 That is how the 100% figure on this page and the second registered object sit
                 together without contradicting each other.
               </p>
               <p>
                 Support is offered on the basis of need, whatever a family believes. Nobody is asked
                 to attend, join or profess anything in order to go to school, or in order to pay for
-                somebody else to. Sponsors come to us with every kind of belief and none, and are
-                equally welcome.
+                somebody else to. Sponsors come to us with every kind of belief and none, and all
+                are equally welcome.
               </p>
             </div>
           </div>
@@ -255,7 +264,7 @@ export default function About() {
                 {[
                   'We never publish a photograph of a child alongside their name, and we do not publish a child’s school or address.',
                   'Photographs of a sponsored child go privately to that child’s sponsor, and nowhere else.',
-                  'Letters and cards pass through us in both directions. There is no direct contact between a sponsor and a child outside the charity.',
+                  'Letters and cards pass through us in both directions: you can send a letter to your child when one of our team is visiting Kenya from the UK. There is no direct contact between a sponsor and a child outside the charity.',
                   'Please do not send money or gifts to a child or family directly. It puts them in a difficult position and we cannot account for it.',
                 ].map((line) => (
                   <li key={line} className="flex gap-3">
@@ -281,7 +290,7 @@ export default function About() {
               <Eyebrow>Where to find us</Eyebrow>
               <H2>Where we are</H2>
               <address className="mt-6 max-w-prose font-body text-base not-italic leading-relaxed text-ink-soft sm:text-lg sm:leading-relaxed">
-                <span className="block font-semibold text-ink">Bright Hope Education Project</span>
+                <span className="block font-semibold text-ink">Bright Hope Education</span>
                 <span className="mt-2 block text-sm uppercase tracking-wide text-muted">
                   Registered address
                 </span>

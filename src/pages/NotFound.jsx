@@ -11,7 +11,7 @@ export default function NotFound() {
   return (
     <Layout>
       <SEO
-        title="Page not found | Bright Hope Education Project"
+        title="Page not found | Bright Hope Education"
         description="We could not find that page. Here are the pages people usually want: sponsoring a child, our work in Gede, and how to get in touch."
       />
 

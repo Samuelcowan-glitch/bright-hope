@@ -58,10 +58,10 @@ export default function Footer() {
           {/* The charity */}
           <div>
             <h2 className="font-display text-xl font-semibold leading-snug text-paper">
-              Bright Hope Education Project
+              Bright Hope Education
             </h2>
             <p className="mt-4 font-body text-[0.95rem] leading-relaxed text-paper/80">
-              Funding education for children in Gede and Watamu, Kilifi County, Kenya.
+              Funding education for children in Gede, Watamu, Kilifi County, Kenya.
             </p>
           </div>
 
@@ -124,10 +124,10 @@ export default function Footer() {
         </div>
 
         {/* Baseline. The registration statement names the registered charity,
-            which is Rainbow House Kenya — not Bright Hope Education Project. */}
+            which is Rainbow House Kenya — not Bright Hope Education. */}
         <div className="mt-14 border-t border-paper/15 pt-8">
           <p className="max-w-prose font-body text-sm leading-relaxed text-paper/75">
-            Bright Hope Education Project is a project of Rainbow House Kenya, a charity
+            Bright Hope Education is a project of Rainbow House Kenya, a charity
             registered in England and Wales, number 1111579.
           </p>
           <p className="mt-4 font-body text-sm text-paper/60">

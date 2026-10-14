@@ -17,19 +17,19 @@ export default function Blog() {
   return (
     <Layout>
       <SEO
-        title="Blog | Updates from Gede and Watamu, Kenya | Bright Hope Education Project"
-        description="Updates from Gede and Watamu, Kilifi County: the schools, the library, the ABBAFATHERLAND hub and what sponsorship paid for this term."
+        title="Blog | Updates from Gede, Watamu, Kenya | Bright Hope Education"
+        description="Updates from Gede, Watamu, Kilifi County: the schools, the library, the ABBAFATHERLAND hub and what sponsorship paid for this term."
       />
 
       {/* Header */}
       <Section className="bg-sand-light pb-10 sm:pb-12 lg:pb-14">
         <Container>
-          <Eyebrow>Gede and Watamu · Kilifi County · Kenya</Eyebrow>
+          <Eyebrow>Gede, Watamu · Kilifi County · Kenya</Eyebrow>
           <h1 className="max-w-prose font-display text-display font-semibold text-primary sm:text-display-lg lg:text-display-xl">
             Read our latest updates
           </h1>
           <Lead>
-            Updates on our day-to-day work, our education projects and news from Gede and Watamu,
+            Updates on our day-to-day work, our education projects and news from Gede, Watamu,
             Kilifi County, Kenya.
           </Lead>
         </Container>

@@ -23,7 +23,7 @@ export default function BlogPost() {
     return (
       <Layout>
         <SEO
-          title="Post not found | Bright Hope Education Project"
+          title="Post not found | Bright Hope Education"
           description="We could not find that blog post. The archive lists everything we have written."
         />
         <Section>
@@ -136,7 +136,7 @@ export default function BlogPost() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <H2>Twenty-nine children are sponsored through Bright Hope today.</H2>
+              <H2>Forty-four students are sponsored through Bright Hope today.</H2>
               <Lead>
                 £15 a month covers a primary school child’s school costs. £35 a month covers a
                 secondary school student’s. Vocational and higher education is arranged student by student, so tell us

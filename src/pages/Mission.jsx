@@ -33,7 +33,7 @@ const PILLARS = [
     eyebrow: 'Community',
     heading: 'Led by the people who live there',
     body:
-      'Communities in Gede and Watamu are at the heart of our work. By collaborating with local leaders and employing local staff, we aim for our programmes to be community-led and to reach the children who need them most.',
+      'The community in Gede is at the heart of our work. By collaborating with local leaders and employing local staff, we aim for our programmes to be community-led and to reach the children who need them most.',
   },
   {
     eyebrow: 'Sustainability',
@@ -68,8 +68,8 @@ export default function Mission() {
   return (
     <Layout>
       <SEO
-        title="Our mission, vision and goals | Bright Hope Education Project"
-        description="Our mission in Gede and Watamu, Kilifi County: education, community and sustainability, the registered objects this work is pursued under, and what our sponsors say."
+        title="Our mission, vision and goals | Bright Hope Education"
+        description="Our mission in Gede, Watamu, Kilifi County: education, community and sustainability, the registered objects this work is pursued under, and what our sponsors say."
       />
 
       {/* Hero */}
@@ -81,8 +81,8 @@ export default function Mission() {
               Our Mission, Vision and Goals
             </h1>
             <Lead>
-              Bright Hope Education Project is a project of Rainbow House Kenya. What follows is what we are trying to
-              do in Gede and Watamu, and the purposes we are registered to pursue.
+              Bright Hope Education is a project of Rainbow House Kenya. What follows is what we are trying to
+              do in Gede, Watamu, and the purposes we are registered to pursue.
             </Lead>
           </div>
         </Container>
@@ -97,7 +97,7 @@ export default function Mission() {
               <H2>Every child in a classroom, whatever their circumstance</H2>
               <div className="mt-6 max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p>
-                  Starting in Gede and Watamu in eastern Kenya, our vision is to provide an
+                  Starting in Gede, Watamu, in eastern Kenya, our vision is to provide an
                   environment where every child has access to education, regardless of their
                   background or circumstance.
                 </p>
@@ -211,7 +211,7 @@ export default function Mission() {
             <div className="lg:col-span-7">
               <div className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink-soft">
                 <p>
-                  More than twenty-nine children sponsored. More students finishing secondary school
+                  More than forty-four students sponsored. More students finishing secondary school
                   and going on to vocational training or university. A library in Gede that is busy
                   every afternoon.
                 </p>

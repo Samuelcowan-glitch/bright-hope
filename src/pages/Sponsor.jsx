@@ -88,7 +88,6 @@ const PACKAGES = [
       'Uniform and shoes',
       'Books and materials',
       'A daily meal',
-      'Basic healthcare',
       'Exam entry',
     ],
     cta: 'Sponsor a primary school child',
@@ -102,16 +101,15 @@ const PACKAGES = [
     Icon: BookOpen,
     body: [
       'Secondary school costs more and matters enormously, because this is where the Kenyan national exams decide what a young person can do next.',
-      'Some of our students travel to school in Watamu, which is why £35 covers more than £15 does: it includes travel to and from school.',
+      'Secondary students go to school wherever they win a place: in Watamu, Kilifi, Malindi and other parts of Kenya. That is why £35 covers more than £15 does: it includes the bus to and from school.',
     ],
     covers: [
       'School fees',
       'Uniform and shoes',
       'Books and materials',
       'A daily meal',
-      'Basic healthcare',
       'Exam entry',
-      'Travel to and from school',
+      'The bus to and from school',
     ],
     cta: 'Sponsor a secondary school child',
     place: 'secondary',
@@ -169,11 +167,15 @@ const STEPS = [
 const FAQS = [
   {
     q: 'How much of my £15 or £35 reaches the child?',
-    a: 'All of it. All funding for the children goes directly for the children.',
+    a: 'All of it. 100% of sponsorship money goes directly to the sponsored child. The charity has running costs of its own — about £400 a month for the site, its security and maintenance — and none of that is taken from sponsorship.',
+  },
+  {
+    q: 'Does sponsorship cover health care?',
+    a: 'No. Sponsorship covers school costs: fees, uniform and shoes, books and materials, a daily meal, exam entry and, for secondary students, the bus. It does not cover basic health care.',
   },
   {
     q: 'Can I send a gift or a letter?',
-    a: 'Yes, through us. We pass letters and cards on. Please do not send money to a child or family directly — it puts them in a difficult position and we cannot account for it.',
+    a: 'Yes, through us. You can send a letter to your child when one of our team is visiting Kenya from the UK, and we pass letters and cards on in both directions. Please do not send money to a child or family directly — it puts them in a difficult position and we cannot account for it.',
   },
   {
     q: 'Can I choose a child?',
@@ -296,8 +298,8 @@ export default function Sponsor() {
   return (
     <Layout>
       <SEO
-        title="Sponsor a child in Kenya | £15 primary, £35 secondary | Bright Hope Education Project"
-        description="Sponsor a child's schooling in Gede and Watamu, Kenya. £15 a month for primary, £35 for secondary, and vocational or higher education by arrangement. Letters and cards come back to you."
+        title="Sponsor a child in Kenya | £15 primary, £35 secondary | Bright Hope Education"
+        description="Sponsor a child's schooling in Gede, Watamu, Kenya. £15 a month for primary, £35 for secondary, and vocational or higher education by arrangement. Letters and cards come back to you."
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -305,7 +307,7 @@ export default function Sponsor() {
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div>
-              <Eyebrow>Gede and Watamu · Kilifi County · Kenya</Eyebrow>
+              <Eyebrow>Gede, Watamu · Kilifi County · Kenya</Eyebrow>
               <h1 className="max-w-prose font-display text-display-sm font-semibold text-primary sm:text-display lg:text-display-lg">
                 Sponsor a child’s education in Gede
               </h1>
@@ -317,7 +319,7 @@ export default function Sponsor() {
               <p className="mt-5 max-w-prose font-body text-base leading-relaxed text-ink-soft">
                 There is no card payment button on this website. Sponsorship starts with the form at
                 the foot of this page and continues as a standing order from your own bank, which is
-                why all funding for the children goes directly for the children.
+                why 100% of sponsorship money goes directly to the sponsored child.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button href="#enquire" variant="primary">
@@ -383,8 +385,8 @@ export default function Sponsor() {
       <Section className="bg-paper">
         <Container>
           <div className="grid gap-8 sm:grid-cols-3">
-            <Stat figure="29" label="Children sponsored, as at October 2026" />
-            <Stat figure="100%" label="All funding for the children goes directly for the children" />
+            <Stat figure="44" label="Students sponsored, from 33 families, as at October 2026" />
+            <Stat figure="100%" label="Of sponsorship money goes directly to the sponsored child" />
             <Stat figure="£15 · £35" label="A month, for a primary or a secondary school place" />
           </div>
         </Container>
@@ -461,7 +463,7 @@ export default function Sponsor() {
 
           <p className="mt-10 max-w-prose font-body text-base leading-relaxed text-ink-soft">
             Sponsorship funding covers school fees, uniform and shoes, books and materials, a daily
-            meal, basic healthcare and exam entry. We do not take a cut. If a child leaves school or
+            meal and exam entry. We do not take a cut. If a child leaves school or
             a sponsorship ends partway through a term, the money already given stays with that
             child’s education until the term is paid for, and anything left is used for the next
             child waiting for a place.
@@ -520,6 +522,10 @@ export default function Sponsor() {
                 Letters and cards pass through the office before they are sent on, and there is no
                 direct contact between a sponsor and a child outside the charity. That is a
                 safeguarding rule, not an administrative one.
+              </p>
+              <p className="mt-5 max-w-prose font-body text-base leading-relaxed text-ink-soft">
+                You can write back, too. When one of our team visits Kenya from the UK, they take
+                sponsors&rsquo; letters with them and hand them over.
               </p>
             </div>
             <Card>
@@ -982,7 +988,7 @@ export default function Sponsor() {
                   Who you are sending it to
                 </h3>
                 <p className="mt-4 font-body text-base leading-relaxed text-ink-soft">
-                  Bright Hope Education Project is a project of Rainbow House Kenya.
+                  Bright Hope Education is a project of Rainbow House Kenya.
                 </p>
                 <p className="mt-4 font-body text-base leading-relaxed text-muted">
                   If something about your enquiry is not handled as it should be, tell us: ring
